@@ -1,0 +1,47 @@
+
+body {
+  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: rgba(78, 185, 110, .1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.bright { color: rgba(78, 185, 110, 1); }
+.b-bright { border-color: rgba(78, 185, 110, 1); }
+.b-bright-dimmed { border-color: rgba(78, 185, 110, .5); }
+.bg-bright { background-color: rgba(78, 185, 110, 1); }
+.bright-dimmed { color: rgba(78, 185, 110, .5); }
+
+.br-left {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.br-right {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+button {
+  border-left: 1px solid rgba(0, 0, 0, .1) !important;
+  color: rgba(78, 185, 110, .8);
+  cursor: pointer;
+  transition: all .25s;
+}
+
+button:hover {
+  color: rgba(78, 185, 110, 1);
+}
+
+.avatar {
+  background-size: cover;
+  background-color: rgba(78, 185, 110, .5);
+  background-blend-mode: screen;
+  /*box-shadow: 0 0 0 2px rgba(78, 185, 110, .4);*/
+}
