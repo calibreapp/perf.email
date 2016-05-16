@@ -11,7 +11,7 @@ module.exports = {
     javascript: './index.js'
   },
   output: {
-    filename: 'index.js',
+    filename: '[hash].js',
     path: __dirname + '/public',
     publicPath: '/'
   },
