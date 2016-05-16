@@ -3,6 +3,7 @@
 let webpack = require('webpack')
 let autoprefixer = require('autoprefixer')
 let HtmlWebpackPlugin = require('html-webpack-plugin')
+let ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
   context: __dirname + '/src',
@@ -15,15 +16,16 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: './index.html'
-    }),
     new webpack.optimize.UglifyJsPlugin({
       output: {
         comments: false
       }
-    })
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: 'index.html'
+    }),
+    new ExtractTextPlugin('[hash].css')
   ],
   module: {
     preLoaders: [
@@ -36,7 +38,7 @@ module.exports = {
     loaders: [
       {
         test: /\.css$/,
-        loaders: ['style', 'css', 'postcss']
+        loader: ExtractTextPlugin.extract('style', 'css?minimize', 'postcss')
       },
       {
         test: /\.js$/,
