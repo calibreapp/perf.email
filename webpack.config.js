@@ -1,12 +1,13 @@
 'use strict'
 
 let webpack = require('webpack')
+let autoprefixer = require('autoprefixer')
 let HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   context: __dirname + '/src',
   entry: {
-    javascript: './index.jsx'
+    javascript: './index.js'
   },
   output: {
     filename: 'index.js',
@@ -34,20 +35,23 @@ module.exports = {
     ],
     loaders: [
       {
-        test: /\.jsx?$/,
+        test: /\.css$/,
+        loaders: ['style', 'css', 'postcss']
+      },
+      {
+        test: /\.js$/,
         exclude: /node_modules/,
         loaders: ['react-hot', 'babel-loader'],
       },
       {
-        test: /\.css?$/,
-        loaders: ['style/url', 'file']
-      },
-      {
-        test: /\.svg?$/,
+        test: /\.svg$/,
         loaders: [
           'svg-sprite'
         ]
       }
     ]
+  },
+  postcss: function () {
+    return [autoprefixer]
   }
 }
