@@ -28,6 +28,10 @@ fieldset {
   border-bottom-right-radius: 3px;
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 button {
   border-left: 1px solid rgba(0, 0, 0, .1) !important;
   color: rgba(78, 185, 110, .8);
@@ -43,4 +47,11 @@ button:hover {
   background-size: cover;
   background-color: rgba(78, 185, 110, .5);
   background-blend-mode: screen;
+}
+
+#graph-anim {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  color: rgba(78, 185, 110, .1);
 }
