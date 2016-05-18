@@ -1,7 +1,7 @@
 {
   "Paths": {
-    "Quantity": 1,
-    "Items": ["/"]
+    "Quantity": 2,
+    "Items": ["/", "rss"]
   },
   "CallerReference": "build-invalidation"
 }
