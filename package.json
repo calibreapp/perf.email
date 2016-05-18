@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production webpack --progress --colors --bail --optimize-minimize --optimize-dedupe",
     "deploy": "aws s3 sync public/ s3://perf.email --acl public-read",
     "rss": "node rss.js > public/rss",
-    "invalidate-edge-cache": "aws cloudfront create-invalidation --invalidation-batch file://cf-invalidation.json --distribution-id $CF_DISTRIBUTION"
+    "invalidate-edge-cache": "aws cloudfront create-invalidation --paths / /index.html /rss --distribution-id $CF_DISTRIBUTION"
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",
