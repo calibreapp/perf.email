@@ -19,7 +19,12 @@ form.onsubmit = function (event) {
     .then((r) => {
       if (r.Status === 200) {
         message.textContent = 'Subscribed!'
+      } else {
+        message.textContent = r.Message
       }
+
+      message.classList.remove('white-50')
+      message.classList.add('white-90')
     })
 
   event.preventDefault()
