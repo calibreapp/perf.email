@@ -3,7 +3,8 @@
 let webpack = require('webpack')
 let autoprefixer = require('autoprefixer')
 let HtmlWebpackPlugin = require('html-webpack-plugin')
-let ExtractTextPlugin = require("extract-text-webpack-plugin")
+let ExtractTextPlugin = require('extract-text-webpack-plugin')
+let issues = require('./issues.json').reverse()
 
 module.exports = {
   context: __dirname + '/src',
@@ -23,7 +24,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      template: 'index.html'
+      template: 'index.html',
+      issues: issues
     }),
     new ExtractTextPlugin('[hash].css')
   ],
