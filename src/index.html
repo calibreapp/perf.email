@@ -47,12 +47,23 @@
 
 
         <div class="tc pa2 pa4-l center">
-          <h2 class="f3 mt1-ns">First issue</h2>
-          <!--<h2 class="f3 mt1-ns">First issue</h2>-->
+          <h2 class="f3 mt1-ns">Issues</h2>
 
           <ul class="list ma0 pa0">
-            <li class="ph3 pv3 black-70">Issue #1 — Available June 1st</li>
-            <!--<li class="ph3 pv3 bb b--black-10 bright">Issue #1</li>-->
+            <li class="ph3 pv3 bb b--black-10 black-70">Issue #2 — Available June 15th</li>
+
+            <% htmlWebpackPlugin.options.issues.forEach((issue, index) => { %>
+              <% if (index == htmlWebpackPlugin.options.issues.length - 1) { %>
+                <li class="ph3 pv3">
+              <% } else { %>
+                <li class="ph3 pv3 bb b--black-10">
+              <% } %>
+                <a class="bright no-underline" href="<%= issue.url %>">
+                  <%= issue.title %>
+                </a>
+              </li>
+            <% }) %>
+
           </ul>
         </div>
       </div>
