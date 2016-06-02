@@ -30,4 +30,5 @@ form.onsubmit = function (event) {
     })
 
   event.preventDefault()
+  ga('send', 'event', 'Mailing list', 'signup')
 }
