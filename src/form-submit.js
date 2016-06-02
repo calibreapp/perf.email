@@ -10,6 +10,7 @@ form.onsubmit = function (event) {
   let params = {}
 
   let inputs = form.querySelectorAll('input')
+  let button = form.querySelector('button')
 
   inputs.forEach((i) => {
     params[i.name] = i.value
@@ -19,6 +20,7 @@ form.onsubmit = function (event) {
     .then((r) => {
       if (r.Status === 200) {
         message.textContent = 'Subscribed!'
+        button.textContent = '🔜💌'
       } else {
         message.textContent = r.Message
       }
