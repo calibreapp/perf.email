@@ -9,7 +9,8 @@
     "deploy": "aws s3 sync public/ s3://perf.email --acl public-read",
     "rss": "node rss.js > public/rss",
     "api": "mkdir -p public/api; cp issues.json public/api/",
-    "invalidate-edge-cache": "aws cloudfront create-invalidation --paths / /index.html /rss --distribution-id $CF_DISTRIBUTION"
+    "invalidate-edge-cache": "aws cloudfront create-invalidation --paths / /index.html /rss --distribution-id $CF_DISTRIBUTION",
+    "set-cors": "aws s3api put-bucket-cors --cors-configuration file://cors.json"
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",
