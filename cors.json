@@ -3,7 +3,7 @@
     {
       "AllowedOrigins": ["*"],
       "AllowedHeaders": ["*"],
-      "AllowedMethods": ["*"],
+      "AllowedMethods": ["GET", "OPTIONS", "HEAD"],
       "MaxAgeSeconds": 3000
     }
   ]
