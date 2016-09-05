@@ -28,5 +28,11 @@
     "description": "Important changes to Typekit, UI design, Delta caching and more",
     "url": "http://createsend.com/t/d-E3B70D0609B11D93",
     "date": "Tue Aug 09 2016 07:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #6",
+    "description": "requestIdleCallback, Netflix A/B testing, QUIC Protocol and more",
+    "url": "http://createsend.com/t/d-0A628E4D87A8A5ED",
+    "date": "Fri Sep 1 2016 07:00:00 GMT+1000 (AEST)"
   }
 ]
