@@ -2,7 +2,7 @@ FROM node:6.2.0
 
 RUN apt-get update
 
-RUN apt-get install unzip
+RUN apt-get install -y unzip python-dev
 
 RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 RUN unzip awscli-bundle.zip
