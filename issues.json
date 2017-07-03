@@ -52,5 +52,11 @@
     "description": "Lighthouse in Chrome Canary, PWA Stats, Article Performance Leaderboard and more",
     "url": "http://createsend.com/t/d-BA59EE8B10D8995F",
     "date": "Mon May 29 2017 07:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #10",
+    "description": "WebAssembly, base64, preload prefetch and more",
+    "url": "http://mailchi.mp/0ffec9f6c31d/issue-10-webassembly-base64-preload-prefetch-and-more",
+    "date": "Mon July 3 2017 07:00:00 GMT+1000 (AEST)"
   }
 ]
