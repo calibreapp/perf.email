@@ -1,7 +1,8 @@
 [
   {
     "title": "Issue #1",
-    "description": "Designing for performance, Chrome 51, JPG compression and more",
+    "description":
+      "Designing for performance, Chrome 51, JPG compression and more",
     "url": "http://createsend.com/t/d-7FC31A9B3342BE20",
     "date": "Wed Jun 01 2016 07:00:00 GMT+1000 (AEST)"
   },
@@ -13,50 +14,66 @@
   },
   {
     "title": "Issue #3",
-    "description": "Brotli compression, High performance networking, Mutation Observer tips and more",
+    "description":
+      "Brotli compression, High performance networking, Mutation Observer tips and more",
     "url": "http://createsend.com/t/d-A741CD19AC18046E",
     "date": "Wed Jul 04 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #4",
-    "description": "Real world http/2, font loading strategies, image compression and more",
+    "description":
+      "Real world http/2, font loading strategies, image compression and more",
     "url": "http://createsend.com/t/d-F870C0919E37D86F",
     "date": "Wed Jul 22 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #5",
-    "description": "Important changes to Typekit, UI design, Delta caching and more",
+    "description":
+      "Important changes to Typekit, UI design, Delta caching and more",
     "url": "http://createsend.com/t/d-E3B70D0609B11D93",
     "date": "Tue Aug 09 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #6",
-    "description": "requestIdleCallback, Netflix A/B testing, QUIC Protocol and more",
+    "description":
+      "requestIdleCallback, Netflix A/B testing, QUIC Protocol and more",
     "url": "http://createsend.com/t/d-0A628E4D87A8A5ED",
     "date": "Fri Sep 1 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #7",
-    "description": "Redesigning browser history, Cloudfront HTTP/2, image metadata and more",
+    "description":
+      "Redesigning browser history, Cloudfront HTTP/2, image metadata and more",
     "url": "http://createsend.com/t/d-91210611303764B2",
     "date": "Wed Sep 14 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #8",
-    "description": "JavaScript start-up performance, state of global connectivity, data-saving apps and more",
+    "description":
+      "JavaScript start-up performance, state of global connectivity, data-saving apps and more",
     "url": "http://createsend.com/t/d-844CD88977531101",
     "date": "Mon May 15 2017 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #9",
-    "description": "Lighthouse in Chrome Canary, PWA Stats, Article Performance Leaderboard and more",
+    "description":
+      "Lighthouse in Chrome Canary, PWA Stats, Article Performance Leaderboard and more",
     "url": "http://createsend.com/t/d-BA59EE8B10D8995F",
     "date": "Mon May 29 2017 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #10",
     "description": "WebAssembly, base64, preload prefetch and more",
-    "url": "http://mailchi.mp/0ffec9f6c31d/issue-10-webassembly-base64-preload-prefetch-and-more",
+    "url":
+      "http://mailchi.mp/0ffec9f6c31d/issue-10-webassembly-base64-preload-prefetch-and-more",
     "date": "Mon July 3 2017 07:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #11",
+    "description":
+      "Essential image optimization, web fonts without JavaScript, the cost of ads and more! ",
+    "url":
+      "http://mailchi.mp/a6684179ae64/issue-10-webassembly-base64-preload-prefetch-and-more-2775329",
+    "date": "Thu November 2 2017 07:00:00 GMT+1000 (AEST)"
   }
 ]
