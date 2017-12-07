@@ -1,7 +1,7 @@
-
 body {
-  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: rgba(78, 185, 110, .1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: rgba(78, 185, 110, 0.1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,11 +12,21 @@ fieldset {
   padding: 0;
 }
 
-.bright { color: rgba(78, 185, 110, 1); }
-.b-bright { border-color: rgba(78, 185, 110, 1); }
-.b-bright-dimmed { border-color: rgba(78, 185, 110, .5); }
-.bg-bright { background-color: rgba(78, 185, 110, 1); }
-.bright-dimmed { color: rgba(78, 185, 110, .5); }
+.bright {
+  color: rgba(78, 185, 110, 1);
+}
+.b-bright {
+  border-color: rgba(78, 185, 110, 1);
+}
+.b-bright-dimmed {
+  border-color: rgba(78, 185, 110, 0.5);
+}
+.bg-bright {
+  background-color: rgba(78, 185, 110, 1);
+}
+.bright-dimmed {
+  color: rgba(78, 185, 110, 0.5);
+}
 
 .br-left {
   border-top-left-radius: 3px;
@@ -33,10 +43,10 @@ input {
 }
 
 button {
-  border-left: 1px solid rgba(0, 0, 0, .1) !important;
-  color: rgba(78, 185, 110, .8);
+  border-left: 1px solid rgba(0, 0, 0, 0.1) !important;
+  color: rgba(78, 185, 110, 0.8);
   cursor: pointer;
-  transition: all .25s;
+  transition: all 0.25s;
 }
 
 button:hover {
@@ -45,7 +55,7 @@ button:hover {
 
 .avatar {
   background-size: cover;
-  background-color: rgba(78, 185, 110, .5);
+  background-color: rgba(78, 185, 110, 0.5);
   background-blend-mode: screen;
 }
 
@@ -53,5 +63,5 @@ button:hover {
   position: absolute;
   top: 0;
   z-index: -1;
-  color: rgba(78, 185, 110, .1);
+  color: rgba(78, 185, 110, 0.1);
 }

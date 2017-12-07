@@ -32,8 +32,8 @@
 
     <div class="bg-white-70">
       <div class="tc pa2 pa4-l center">
-        <p class="f4 f2-ns mt1 mb0">Web performance tools, tips, talks and resources in your&nbsp;inbox.</p>
-        <p class="f5 lh-copy black-70">
+        <p class="f4 f2-ns mt1 mb0 b mb4">Web performance tools, tips, talks and resources in your&nbsp;inbox.</p>
+        <p class="f4 lh-copy black-70">
           perf.email is a twice monthly newsletter bringing you the most interesting studies of all things web performance and user-experience.
           If it happens between the server and the human, you'll find it here.
         </p>
@@ -46,9 +46,9 @@
             <div class="dt w-100">
               <input name="cm-kkihkj-kkihkj" class="w-60 w-75-ns f5 pa2 ba b--white bw2 br-left" type="email" autocapitalize="off" autocorrect="off"
                 placeholder="Your email address" />
-              <button class="dtc w-40 w-25-ns f5 pa2 bg-white ba b--white bw2 br-right ttu">Subscribe</button>
+              <button class="dtc w-40 w-25-ns f5 pa2 bg-white ba b--white bw2 br--right bold ttu">Subscribe</button>
             </div>
-            <p class="js-message white-50">We’ll never send spam or share your details with 3rd parties.</p>
+            <p class="js-message white-70">We’ll never send spam or share your details with 3rd parties.</p>
           </fieldset>
         </form>
       </div>
@@ -58,17 +58,20 @@
         <h2 class="f3 mt1-ns">Issues</h2>
 
         <ul class="list ma0 pa0">
-          <li class="ph3 pv3 bb b--black-10 black-70">Issue #12 — Soon.</li>
+          <li class="ph3 pv4 bb b--black-10 black-70 f5">Issue #14 — Soon.</li>
 
           <% htmlWebpackPlugin.options.issues.forEach((issue, index) => { %>
             <% if (index == htmlWebpackPlugin.options.issues.length - 1) { %>
-              <li class="ph3 pv3">
+              <li class="pv4 tl">
                 <% } else { %>
-                  <li class="ph3 pv3 bb b--black-10">
+                  <li class="pv4 bb b--black-10 tl">
                     <% } %>
-                      <a class="bright no-underline" href="<%= issue.url %>">
+                      <a class="bright no-underline bold b db f5" href="<%= issue.url %>">
                         <%= issue.title %>
                       </a>
+                      <p class="b--black-10 black-70 mb0 mt2">
+                        <%= issue.description %>
+                      </p>
                   </li>
                   <% }) %>
 
@@ -76,49 +79,49 @@
       </div>
     </div>
 
-    <div class="center pa3 pa4-l tc">
+    <div class=" center pa3 pa4-l tc ">
       <div>
-        <p class="f5 lh-copy black-40 ma0">
+        <p class="f5 lh-copy black-40 mt0 mb4">
           Follow
-          <a class="link dim black-40 underline" href="https://twitter.com/perfemail">perfemail</a> on Twitter for updates. If you’ve seen something you’d like to share, please
-          <a class="link dim black-40 underline" href="mailto:hi@perf.email">send suggestions</a> for the next issue.
+          <a class="link dim black-40 underline " href="https://twitter.com/perfemail ">perfemail</a> on Twitter for updates. If you’ve seen something you’d like to share, please
+          <a class="link dim black-40 underline " href="mailto:hi@perf.email ">send suggestions</a> for the next issue.
         </p>
       </div>
 
-      <div class="f6 black-60 mt4 cf">
-        <div class="fl-ns w-50-ns tc">
-          <p class="black-40">Curated by</p>
-          <a href="https://twitter.com/fox" class="link mb2 db">
-            <div class="dt-ns center w-50 tl-ns">
-              <div class="dtc-ns">
-                <div class="br-100 h2 w2 dib avatar" style="background-image: url(https://avatars.io/twitter/fox/medium);"></div>
+      <div class="f6 black-60 mt4 cf mb4">
+        <div class="fl-ns w-50-ns tc ">
+          <p class="black-40 ">Curated by</p>
+          <a href="https://twitter.com/fox " class="link mb2 db ">
+            <div class="dt-ns center w-50 tl-ns ">
+              <div class="dtc-ns ">
+                <div class="br-100 h2 w2 dib avatar " style="background-image: url(https://avatars.io/twitter/fox/medium); "></div>
               </div>
 
-              <div class="dtc-ns w-100 v-mid pl2">
-                <p class="black-50 b ma0">Karolina Szczur</p>
-                <p class="black-40 ma0">@fox</p>
+              <div class="dtc-ns w-100 v-mid pl2 ">
+                <p class="black-50 b ma0 ">Karolina Szczur</p>
+                <p class="black-40 ma0 ">@fox</p>
               </div>
             </div>
           </a>
-          <a href="https://twitter.com/benschwarz" class="link db">
-            <div class="dt-ns center w-50 tl-ns">
-              <div class="dtc-ns">
-                <div class="br-100 h2 w2 dib avatar" style="background-image: url(https://avatars.io/twitter/benschwarz/medium);"></div>
+          <a href="https://twitter.com/benschwarz " class="link db ">
+            <div class="dt-ns center w-50 tl-ns ">
+              <div class="dtc-ns ">
+                <div class="br-100 h2 w2 dib avatar " style="background-image: url(https://avatars.io/twitter/benschwarz/medium); "></div>
               </div>
 
-              <div class="dtc-ns w-100 v-mid pl2">
-                <p class="black-50 b ma0">Ben Schwarz</p>
-                <p class="black-40 ma0">@benschwarz</p>
+              <div class="dtc-ns w-100 v-mid pl2 ">
+                <p class="black-50 b ma0 ">Ben Schwarz</p>
+                <p class="black-40 ma0 ">@benschwarz</p>
               </div>
             </div>
           </a>
         </div>
 
-        <div class="fl-ns w-50-ns logo">
-          <p class="black-40">Brought to you by</p>
-          <a class="bright-dimmed link" href="https://calibreapp.com">
-            <svg width="140" height="30" style="fill: currentColor">
-              <use xlink:href="#logo">
+        <div class="fl-ns w-50-ns logo ">
+          <p class="black-40 ">Brought to you by</p>
+          <a class="bright-dimmed link " href="https://calibreapp.com ">
+            <svg width="140 " height="30 " style="fill: currentColor ">
+              <use xlink:href="#logo ">
             </svg>
           </a>
         </div>
