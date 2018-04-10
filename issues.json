@@ -106,5 +106,13 @@
     "url":
       "https://mailchi.mp/9794afda3347/issue-15front-end-performance-checklist-safari-and-webpack-performance-upgrades-perfmatters-conference-and-more",
     "date": "Tue January 30 2018 07:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #16",
+    "description":
+      "Building performance culture, revenue impact calculator, lazy loading images and video, automating performance systems and more.",
+    "url":
+      "https://mailchi.mp/707bbab0d1c2/issue-16building-performance-culture-revenue-impact-calculator-lazy-loading-images-and-video-automating-performance-systems-and-more",
+    "date": "Tue April 10 2018 07:00:00 GMT+1000 (AEST)"
   }
 ]
