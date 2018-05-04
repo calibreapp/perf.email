@@ -1,20 +1,20 @@
-'use strict'
+"use strict";
 
-let webpack = require('webpack')
-let autoprefixer = require('autoprefixer')
-let HtmlWebpackPlugin = require('html-webpack-plugin')
-let ExtractTextPlugin = require('extract-text-webpack-plugin')
-let issues = require('./issues.json').reverse()
+let webpack = require("webpack");
+let autoprefixer = require("autoprefixer");
+let HtmlWebpackPlugin = require("html-webpack-plugin");
+let ExtractTextPlugin = require("extract-text-webpack-plugin");
+let issues = require("./issues.json").reverse();
 
 module.exports = {
-  context: __dirname + '/src',
+  context: __dirname + "/src",
   entry: {
-    javascript: './index.js'
+    javascript: "./index.js"
   },
   output: {
-    filename: '[hash].js',
-    path: __dirname + '/public',
-    publicPath: '/'
+    filename: "[hash].js",
+    path: __dirname + "/public",
+    publicPath: "/"
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
@@ -24,38 +24,40 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      template: 'index.html',
+      template: "index.html",
       issues: issues
     }),
-    new ExtractTextPlugin('[hash].css')
+    new ExtractTextPlugin("[hash].css")
   ],
   module: {
     preLoaders: [
       {
         test: /\.js$/,
-        loader: 'eslint-loader',
+        loader: "eslint-loader",
         exclude: /node_modules/
       }
     ],
     loaders: [
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css?minimize', 'postcss')
+        loader: ExtractTextPlugin.extract("style", "css?minimize", "postcss")
+      },
+      {
+        test: /\.woff2$/,
+        loader: "file"
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['react-hot', 'babel-loader'],
+        loaders: ["react-hot", "babel-loader"]
       },
       {
         test: /\.svg$/,
-        loaders: [
-          'svg-sprite'
-        ]
+        loaders: ["svg-sprite"]
       }
     ]
   },
-  postcss: function () {
-    return [autoprefixer]
+  postcss: function() {
+    return [autoprefixer];
   }
-}
+};

@@ -3,141 +3,99 @@
 
 <head>
   <meta charset="utf-8">
-  <title>perf.email: A free, twice monthly newsletter</title>
+  <title>perf.email: A monthly newsletter on web performance, accessibility and user experience.</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-  <meta name="description" content="A free monthly newsletter about web performance and user interaction.">
+  <meta name="description" content="A monthly newsletter on web performance, accessibility and user experience.">
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="perf.email" />
-  <meta property="og:description" content="A free monthly newsletter about web performance and user interaction." />
+  <meta property="og:description" content="A monthly newsletter on web performance, accessibility and user experience." />
   <meta property="og:url" content="https://perf.email/" />
   <meta property="og:site_name" content="perf.email" />
   <link rel="alternate" type="application/atom+xml" title="Feed" href="/rss" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.1/web-animations.min.js"></script>
-  <script>
-    window.Calibre = window.Calibre || { apiKey: "f861f7c8-e2ff-4f1e-bd35-93400e3378dd" }
-  </script>
-  <script src="https://pulse.calibreapp.com" defer></script>
 </head>
 
 <body>
-  <svg id="graph-anim" width="100%" height="25%">
-    <g style="fill: currentColor;"></g>
-  </svg>
 
-  <div class="w-90 w-75-m w-50-l center">
-    <div class="pa2 pa0-ns">
-      <h1 class="f4 f3-ns fw6 mb3 bright">perf.email</h1>
+  <header role="banner">
+    <div class="container">
+      <h4 class="perfemail-logo">
+        <svg width="27" height="30" class="spade">
+          <use xlink:href="#spade" link:href="#spade">
+        </svg>
+        <a href="https://calibreapp.com">Performance Newsletter</a>
+      </h4>
+      <h1>Web performance tools, talks and resources delivered to your inbox once a month.</h1>
+      <form action="https://theint.us2.list-manage.com/subscribe/post?u=9067434ef642e9c92aa7453d2&id=454acc21a3" method="POST">
+        <fieldset>
+          <input name="EMAIL" type="email" autocapitalize="off" autocorrect="off" placeholder="Your email address" />
+          <button type="submit">Subscribe</button>
+
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_9067434ef642e9c92aa7453d2_454acc21a3" tabindex="-1" value="">
+          </div>
+          <p class="js-message">We will never send spam or share your details with third parties.</p>
+        </fieldset>
+      </form>
     </div>
+  </header>
 
-    <div class="bg-white-70">
-      <div class="tc pa2 pa4-l center">
-        <p class="f4 f2-ns mt1 mb0 b mb4">Web performance tools, tips, talks and resources in your&nbsp;inbox.</p>
-        <p class="f4 lh-copy black-70">
-          perf.email is a monthly newsletter bringing you the most interesting studies of all things web performance and user-experience.
-          If it happens between the server and the human, you'll find it here.
-        </p>
-      </div>
+  <div class="container">
+    <main role="main">
+      <h1>Issues</h1>
 
-      <div class="tc bg-bright pa3 pa4-ns pt3 pb3">
-        <form action="https://theint.us2.list-manage.com/subscribe/post?u=9067434ef642e9c92aa7453d2&id=454acc21a3" method="POST">
-          <fieldset>
-            <h2 class="f3 white-90 mt2">Sign up now</h2>
-            <div class="dt w-100">
-              <input name="EMAIL" class="w-60 w-75-ns f5 pa2 ba b--white bw2 br-left" type="email" autocapitalize="off" autocorrect="off"
-                placeholder="Your email address" />
-              <button type="submit" class="dtc w-40 w-25-ns f5 pa2 bg-white ba b--white bw2 br--right bold ttu">Subscribe</button>
+      <ul>
+        <li>Issue #17 coming early May.</li>
 
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_9067434ef642e9c92aa7453d2_454acc21a3" tabindex="-1" value="">
-              </div>
-            </div>
-            <p class="js-message white-70">We’ll never send spam or share your details with 3rd parties.</p>
-          </fieldset>
-        </form>
-      </div>
-
-
-      <div class="tc pa2 pa4-l center">
-        <h2 class="f3 mt1-ns">Issues</h2>
-
-        <ul class="list ma0 pa0">
-          <li class="ph3 pv4 bb b--black-10 black-70 f5">Issue #17 coming late April.</li>
-
-          <% htmlWebpackPlugin.options.issues.forEach((issue, index) => { %>
-            <% if (index == htmlWebpackPlugin.options.issues.length - 1) { %>
-              <li class="pv4 tl">
-                <% } else { %>
-                  <li class="pv4 bb b--black-10 tl">
-                    <% } %>
-                      <a class="bright no-underline bold b db f5" href="<%= issue.url %>">
-                        <%= issue.title %>
+        <% htmlWebpackPlugin.options.issues.forEach((issue, index) => { %>
+          <% if (index == htmlWebpackPlugin.options.issues.length - 1) { %>
+            <li>
+              <% } else { %>
+                <li>
+                  <% } %>
+                    <h2>
+                      <a href="<%= issue.url %>">
+                        <%= issue.title %> &rarr;
                       </a>
-                      <p class="b--black-10 black-70 mb0 mt2">
-                        <%= issue.description %>
-                      </p>
-                  </li>
-                  <% }) %>
+                    </h2>
+                    <p>
+                      <%= issue.description %>
+                    </p>
+                </li>
+                <% }) %>
 
-        </ul>
-      </div>
-    </div>
-
-    <div class="center pa3 pa4-l tc">
-      <div>
-        <p class="f5 lh-copy black-40 mt0 mb4">
-          Follow
-          <a class="link dim black-40 underline" href="https://twitter.com/perfemail">perfemail</a> on Twitter for updates.
-        </p>
-      </div>
-
-      <div class="f6 black-60 mt4 cf mb4">
-        <div class="fl-ns w-60-ns tc">
-          <p class="black-40">Curated by</p>
-          <a href="https://twitter.com/fox" class="link mb3 db">
-            <div class="dt-ns center w-50 tl-ns">
-              <div class="dtc-ns">
-                <div class="br-100 h2 w2 dib avatar" style="background-image: url(https://avatars.io/twitter/fox/medium);"></div>
-              </div>
-
-              <div class="dtc-ns w-100 v-mid pl2">
-                <p class="black-50 b ma0">Karolina Szczur</p>
-                <p class="black-40 ma0">@fox</p>
-              </div>
-            </div>
-          </a>
-          <a href="https://twitter.com/benschwarz" class="link db">
-            <div class="dt-ns center w-50 tl-ns">
-              <div class="dtc-ns">
-                <div class="br-100 h2 w2 dib avatar" style="background-image: url(https://avatars.io/twitter/benschwarz/medium);"></div>
-              </div>
-
-              <div class="dtc-ns w-100 v-mid pl2">
-                <p class="black-50 b ma0">Ben Schwarz</p>
-                <p class="black-40 ma0">@benschwarz</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="fl-ns w-40-ns logo">
-          <p class="black-40">Brought to you by</p>
-          <a class="bright-dimmed link db" href="https://calibreapp.com">
-            <svg width="140" height="30" style="fill: currentColor">
-              <use xlink:href="#logo" link:href="#logo">
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
+      </ul>
+    </main>
   </div>
+
+  <footer role="contentinfo">
+    <p>Follow
+      <a href="https://twitter.com/perfemail">@perfemail</a> on Twitter for updates.</p>
+
+    <h4>Brought to you by</h4>
+    <p>
+      <a href="https://calibreapp.com" class="calibre-logo">
+        <svg width="140" height="30" style="fill: white">
+          <use xlink:href="#logo" link:href="#logo">
+        </svg>
+      </a>
+    </p>
+    <p>Performance monitoring for teams wanting to build better, faster products.</p>
+    <p>Curated by
+      <a href="https://twitter.com/benschwarz">@benschwarz</a> and
+      <a href="https://twitter.com/fox">@fox</a>.
+    </p>
+
+  </footer>
+
   <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-49668110-2', 'auto');
     ga('send', 'pageview');

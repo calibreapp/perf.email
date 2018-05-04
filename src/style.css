@@ -1,67 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: rgba(78, 185, 110, 0.1);
+  background-color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: hsl(203, 5%, 32%);
+  font-size: 18px;
+  margin: 0;
 }
+
+/*-----------------------------------------------------------------
+* Links
+------------------------------------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: hsl(218, 50%, 50%);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------
+* Typography
+------------------------------------------------------------------*/
+
+@font-face {
+  font-family: "Calibre";
+  src: url("Calibre-Semibold.woff2") format("woff2");
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 48em) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(0, 0%, 20%);
+  margin-bottom: 30px;
+  font-family: "Calibre", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+p:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+/*-----------------------------------------------------------------
+* Subscription form
+------------------------------------------------------------------*/
 
 fieldset {
-  border: 0;
   margin: 0;
   padding: 0;
-}
-
-.bright {
-  color: rgba(78, 185, 110, 1);
-}
-.b-bright {
-  border-color: rgba(78, 185, 110, 1);
-}
-.b-bright-dimmed {
-  border-color: rgba(78, 185, 110, 0.5);
-}
-.bg-bright {
-  background-color: rgba(78, 185, 110, 1);
-}
-.bright-dimmed {
-  color: rgba(78, 185, 110, 0.5);
-}
-
-.br-left {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.br-right {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border: 0;
 }
 
 input {
-  -webkit-appearance: none;
+  border: 1px solid hsl(0, 0%, 88%);
+  margin-bottom: 15px;
+}
+
+input:focus {
+  transition: border 0.2s ease-in-out;
+  outline: none;
+  border: 1px solid hsl(218, 50%, 80%);
+}
+
+input,
+button {
+  border-radius: 3px;
+  padding: 15px;
+  box-shadow: 0 2px 2px hsl(204, 20%, 95%);
+  width: 100%;
 }
 
 button {
-  border-left: 1px solid rgba(0, 0, 0, 0.1) !important;
-  color: rgba(78, 185, 110, 0.8);
-  cursor: pointer;
-  transition: all 0.25s;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  background-color: hsl(218, 50%, 50%);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+button:focus {
+  outline: none;
 }
 
 button:hover {
-  color: rgba(78, 185, 110, 1);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  background-color: hsl(218, 50%, 30%);
 }
 
-.avatar {
-  background-size: cover;
-  background-color: rgba(78, 185, 110, 0.5);
-  background-blend-mode: screen;
+@media screen and (min-width: 48em) {
+  input {
+    margin: 0 15px 0 0;
+    width: 70%;
+  }
+
+  button {
+    width: auto;
+  }
 }
 
-#graph-anim {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  color: rgba(78, 185, 110, 0.1);
+/*-----------------------------------------------------------------
+* Header
+------------------------------------------------------------------*/
+
+header {
+  padding: 60px 0;
+  background-color: hsl(218, 100%, 98%);
+}
+
+.perfemail-logo {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 16px;
+}
+
+.spade {
+  width: 40px;
+  margin-right: 15px;
+}
+
+/*-----------------------------------------------------------------
+* Container
+------------------------------------------------------------------*/
+
+.container {
+  padding: 0 30px;
+}
+
+@media screen and (min-width: 64em) {
+  .container {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/*-----------------------------------------------------------------
+* Issue list
+------------------------------------------------------------------*/
+
+main {
+  padding: 30px 0;
+}
+
+main h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 30px 0;
+}
+
+li:first-child {
+  padding-top: 0;
+}
+
+li:not(:last-child) {
+  border-bottom: 1px solid hsl(0, 0%, 88%);
+}
+
+li p {
+  margin: 0;
+}
+
+li h2 {
+  margin: 0 0 10px 0;
+}
+
+/*-----------------------------------------------------------------
+* Footer
+------------------------------------------------------------------*/
+
+footer {
+  padding: 30px;
+  background-color: hsl(208, 16%, 15%);
+  color: hsl(203, 16%, 80%);
+  font-size: 16px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer h4 {
+  color: inherit;
+}
+
+.calibre-logo svg:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
 }
