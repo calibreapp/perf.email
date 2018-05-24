@@ -79,33 +79,11 @@ p:not(:last-of-type) {
 * Subscription form
 ------------------------------------------------------------------*/
 
-fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-input {
-  border: 1px solid hsl(0, 0%, 88%);
-  margin-bottom: 15px;
-  -webkit-appearance: none;
-}
-
-input:focus {
-  transition: border 0.2s ease-in-out;
-  outline: none;
-  border: 1px solid hsl(218, 50%, 80%);
-}
-
-input,
-button {
+.button {
   border-radius: 3px;
   padding: 15px;
   box-shadow: 0 2px 2px hsl(204, 20%, 95%);
   width: 100%;
-}
-
-button {
   border: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -113,25 +91,24 @@ button {
   background-color: hsl(218, 50%, 50%);
   font-weight: bold;
   font-size: 14px;
+  margin: 15px 0;
+  display: inline-block;
+  text-decoration: none;
 }
 
-button:focus {
+.button:focus {
   outline: none;
 }
 
-button:hover {
+.button:hover {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   background-color: hsl(218, 50%, 30%);
+  text-decoration: none;
 }
 
 @media screen and (min-width: 48em) {
-  input {
-    margin: 0 15px 0 0;
-    width: 70%;
-  }
-
-  button {
+  .button {
     width: auto;
   }
 }
