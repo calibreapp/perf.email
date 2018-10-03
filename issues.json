@@ -1,8 +1,7 @@
 [
   {
     "title": "Issue #1",
-    "description":
-      "Designing for performance, Chrome 51, JPG compression and more.",
+    "description": "Designing for performance, Chrome 51, JPG compression and more.",
     "url": "http://createsend.com/t/d-7FC31A9B3342BE20",
     "date": "Wed Jun 01 2016 07:00:00 GMT+1000 (AEST)"
   },
@@ -14,121 +13,104 @@
   },
   {
     "title": "Issue #3",
-    "description":
-      "Brotli compression, High performance networking, Mutation Observer tips and more.",
+    "description": "Brotli compression, High performance networking, Mutation Observer tips and more.",
     "url": "http://createsend.com/t/d-A741CD19AC18046E",
     "date": "Wed Jul 04 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #4",
-    "description":
-      "Real world http/2, font loading strategies, image compression and more.",
+    "description": "Real world http/2, font loading strategies, image compression and more.",
     "url": "http://createsend.com/t/d-F870C0919E37D86F",
     "date": "Wed Jul 22 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #5",
-    "description":
-      "Important changes to Typekit, UI design, Delta caching and more.",
+    "description": "Important changes to Typekit, UI design, Delta caching and more.",
     "url": "http://createsend.com/t/d-E3B70D0609B11D93",
     "date": "Tue Aug 09 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #6",
-    "description":
-      "requestIdleCallback, Netflix A/B testing, QUIC Protocol and more.",
+    "description": "requestIdleCallback, Netflix A/B testing, QUIC Protocol and more.",
     "url": "http://createsend.com/t/d-0A628E4D87A8A5ED",
     "date": "Fri Sep 1 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #7",
-    "description":
-      "Redesigning browser history, Cloudfront HTTP/2, image metadata and more.",
+    "description": "Redesigning browser history, Cloudfront HTTP/2, image metadata and more.",
     "url": "http://createsend.com/t/d-91210611303764B2",
     "date": "Wed Sep 14 2016 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #8",
-    "description":
-      "JavaScript start-up performance, state of global connectivity, data-saving apps and more.",
+    "description": "JavaScript start-up performance, state of global connectivity, data-saving apps and more.",
     "url": "http://createsend.com/t/d-844CD88977531101",
     "date": "Mon May 15 2017 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #9",
-    "description":
-      "Lighthouse in Chrome Canary, PWA Stats, Article Performance Leaderboard and more.",
+    "description": "Lighthouse in Chrome Canary, PWA Stats, Article Performance Leaderboard and more.",
     "url": "http://createsend.com/t/d-BA59EE8B10D8995F",
     "date": "Mon May 29 2017 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #10",
     "description": "WebAssembly, base64, preload prefetch and more.",
-    "url":
-      "http://mailchi.mp/0ffec9f6c31d/issue-10-webassembly-base64-preload-prefetch-and-more",
+    "url": "http://mailchi.mp/0ffec9f6c31d/issue-10-webassembly-base64-preload-prefetch-and-more",
     "date": "Mon July 3 2017 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #11",
     "description": "The Critical Request, Facebook news feed changes and more.",
-    "url":
-      "http://mailchi.mp/2ff38b1dff76/issue-11-critical-request-facebook-feed-changes-and-more",
+    "url": "http://mailchi.mp/2ff38b1dff76/issue-11-critical-request-facebook-feed-changes-and-more",
     "date": "Mon August 7 2017 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #12",
-    "description":
-      "Essential image optimization, web fonts without JavaScript, the cost of ads and more.",
-    "url":
-      "http://mailchi.mp/a6684179ae64/issue-12-essential-image-optimisation-web-fonts-without-js-and-more",
+    "description": "Essential image optimization, web fonts without JavaScript, the cost of ads and more.",
+    "url": "http://mailchi.mp/a6684179ae64/issue-12-essential-image-optimisation-web-fonts-without-js-and-more",
     "date": "Thu November 2 2017 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #13",
-    "description":
-      "Realistic performance budgets, new HTTP Archive, the cost of JavaScript and more.",
-    "url":
-      "http://mailchi.mp/cc9bd2b69199/issue-13-realistic-perf-budgets-new-httparchive-and-more",
+    "description": "Realistic performance budgets, new HTTP Archive, the cost of JavaScript and more.",
+    "url": "http://mailchi.mp/cc9bd2b69199/issue-13-realistic-perf-budgets-new-httparchive-and-more",
     "date": "Thu November 23 2017 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #14",
-    "description":
-      "Fontastic web performance, async CSS, why performance efforts fail and more.",
-    "url":
-      "http://mailchi.mp/46584ba62a18/issue-14-fontastic-web-performance-async-css-why-performance-efforts-fail-and-more",
+    "description": "Fontastic web performance, async CSS, why performance efforts fail and more.",
+    "url": "http://mailchi.mp/46584ba62a18/issue-14-fontastic-web-performance-async-css-why-performance-efforts-fail-and-more",
     "date": "Tue December 12 2017 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #15",
-    "description":
-      "Front-end Performance Checklist, Safari and Webpack performance upgrades, PerfMatters Conference and more.",
-    "url":
-      "https://mailchi.mp/9794afda3347/issue-15front-end-performance-checklist-safari-and-webpack-performance-upgrades-perfmatters-conference-and-more",
+    "description": "Front-end Performance Checklist, Safari and Webpack performance upgrades, PerfMatters Conference and more.",
+    "url": "https://mailchi.mp/9794afda3347/issue-15front-end-performance-checklist-safari-and-webpack-performance-upgrades-perfmatters-conference-and-more",
     "date": "Tue January 30 2018 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #16",
-    "description":
-      "Building performance culture, revenue impact calculator, lazy loading images and video, automating performance systems and more.",
-    "url":
-      "https://mailchi.mp/707bbab0d1c2/issue-16building-performance-culture-revenue-impact-calculator-lazy-loading-images-and-video-automating-performance-systems-and-more",
+    "description": "Building performance culture, revenue impact calculator, lazy loading images and video, automating performance systems and more.",
+    "url": "https://mailchi.mp/707bbab0d1c2/issue-16building-performance-culture-revenue-impact-calculator-lazy-loading-images-and-video-automating-performance-systems-and-more",
     "date": "Tue April 10 2018 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #17",
-    "description":
-      "Sustainable technology, the Internet’s health, Chrome reduces parse and compile by almost 40% and more.",
-    "url":
-      "https://mailchi.mp/19bf55788835/issue-17sustainable-technology-how-healthy-is-the-internet-chrome-reduces-parse-and-compile-by-almost-40-and-more",
+    "description": "Sustainable technology, the Internet’s health, Chrome reduces parse and compile by almost 40% and more.",
+    "url": "https://mailchi.mp/19bf55788835/issue-17sustainable-technology-how-healthy-is-the-internet-chrome-reduces-parse-and-compile-by-almost-40-and-more",
     "date": "Mon May 7 2018 07:00:00 GMT+1000 (AEST)"
   },
   {
     "title": "Issue #18",
-    "description":
-      "The cost of third-party scripts, step-by-step performance auditing, fast typography with variable fonts and more.",
-    "url":
-      "https://mailchi.mp/734c9c911f05/issue-18the-cost-of-third-party-scripts-performance-auditing-variable-fonts-and-more",
+    "description": "The cost of third-party scripts, step-by-step performance auditing, fast typography with variable fonts and more.",
+    "url": "https://mailchi.mp/734c9c911f05/issue-18the-cost-of-third-party-scripts-performance-auditing-variable-fonts-and-more",
     "date": "Thu May 24 2018 07:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #18",
+    "description": "Native Lazy Load, Perceived performance, measuring layout and more.",
+    "url": "http://mailchi.mp/perf.email/issue-19",
+    "date": "Wed Oct 2 2018 07:00:00 GMT+1000 (AEST)"
   }
 ]
