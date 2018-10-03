@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+aws configure set preview.cloudfront true
+npm run invalidate-edge-cache
