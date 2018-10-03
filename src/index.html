@@ -27,7 +27,8 @@
         <a href="https://calibreapp.com">Performance Newsletter</a>
       </h4>
       <h1>Web performance tools, talks and resources delivered to your inbox once a month.</h1>
-      <a href="https://calibreapp.us2.list-manage.com/subscribe?u=9067434ef642e9c92aa7453d2&id=7cba5dc7bd" class="button">Subscribe to perf.email</a>
+      <a href="https://calibreapp.us2.list-manage.com/subscribe?u=9067434ef642e9c92aa7453d2&id=7cba5dc7bd" class="button">Subscribe
+        to perf.email</a>
       <p>We will never send spam or share your details with third parties.</p>
     </div>
   </header>
@@ -37,24 +38,24 @@
       <h1>Issues</h1>
 
       <ul>
-        <li>Issue #19 coming in July.</li>
+        <li>Issue #20 coming in November.</li>
 
         <% htmlWebpackPlugin.options.issues.forEach((issue, index) => { %>
-          <% if (index == htmlWebpackPlugin.options.issues.length - 1) { %>
-            <li>
-              <% } else { %>
-                <li>
-                  <% } %>
-                    <h2>
-                      <a href="<%= issue.url %>">
-                        <%= issue.title %> &rarr;
-                      </a>
-                    </h2>
-                    <p>
-                      <%= issue.description %>
-                    </p>
-                </li>
-                <% }) %>
+        <% if (index == htmlWebpackPlugin.options.issues.length - 1) { %>
+        <li>
+          <% } else { %>
+        <li>
+          <% } %>
+          <h2>
+            <a href="<%= issue.url %>">
+              <%= issue.title %> &rarr;
+            </a>
+          </h2>
+          <p>
+            <%= issue.description %>
+          </p>
+        </li>
+        <% }) %>
 
       </ul>
     </main>
