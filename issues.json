@@ -110,7 +110,13 @@
   {
     "title": "Issue #19",
     "description": "Native Lazy Load, Perceived performance, measuring layout and more.",
-    "url": "http://mailchi.mp/perf.email/issue-19",
+    "url": "https://mailchi.mp/perf.email/issue-19",
     "date": "Wed Oct 2 2018 07:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #20",
+    "description": "All about Time to Interactive, WASM, How HTTPs Ruined everything, and more.",
+    "url": "https://mailchi.mp/perf.email/issue-20",
+    "date": "Mon Oct 22 2018 14:00:00 GMT+1000 (AEST)"
   }
 ]
