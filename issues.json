@@ -118,5 +118,11 @@
     "description": "All about Time to Interactive, WASM, How HTTPs Ruined everything, and more.",
     "url": "https://mailchi.mp/perf.email/issue-20",
     "date": "Mon Oct 22 2018 14:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #21",
+    "description": "The ethics of web performance, HTTP/3, faster promises and async functions, Google Lighthouse 4.0 and more.",
+    "url": "https://mailchi.mp/perf.email/issue-21the-ethics-of-web-performance-http3-faster-promises-and-async-functions-google-lighthouse-40-and-more?e=5a5bcee6d4",
+    "date": "Mon Feb 12 2019 14:00:00 GMT+1000 (AEST)"
   }
 ]
