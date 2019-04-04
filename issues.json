@@ -124,5 +124,11 @@
     "description": "The ethics of web performance, HTTP/3, faster promises and async functions, Google Lighthouse 4.0 and more.",
     "url": "https://mailchi.mp/perf.email/issue-21the-ethics-of-web-performance-http3-faster-promises-and-async-functions-google-lighthouse-40-and-more?e=5a5bcee6d4",
     "date": "Mon Feb 12 2019 14:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #22",
+    "description": "Netflix’s web performance case study, new WebAssembly compiler and runtime, WASI Core and more.",
+    "url": "https://mailchi.mp/perf.email/issue-22netflixs-web-performance-case-study-new-webassembly-compiler-and-runtime-wasi-core-and-more",
+    "date": "Mon Apr 1 2019 14:00:00 GMT+1000 (AEST)"
   }
 ]
