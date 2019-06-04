@@ -136,5 +136,11 @@
     "description": "Paint holding, visualising third party scripts impact, performance privilege and more.",
     "url": "https://mailchi.mp/perf.email/issue-23paint-holding-visualising-third-party-scripts-and-performance-privilege",
     "date": "Mon May 20 2019 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #24",
+    "description": "Webfont loading in Google Fonts, Lighthouse 5.0.0, zero parse and compile for JavaScript and more.",
+    "url": "https://mailchi.mp/perf.email/24",
+    "date": "Tue June 04 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
