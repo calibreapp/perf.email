@@ -142,5 +142,11 @@
     "description": "Webfont loading in Google Fonts, Lighthouse 5.0.0, zero parse and compile for JavaScript and more.",
     "url": "https://mailchi.mp/perf.email/24",
     "date": "Tue June 04 2019 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #25",
+    "description": "The real impact of image optimisation, gain speed with variable fonts, accessibility for everyone, implementing critical CSS and more.",
+    "url": "https://mailchi.mp/perf.email/25",
+    "date": "Mon June 17 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
