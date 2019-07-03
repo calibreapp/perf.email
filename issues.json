@@ -148,5 +148,11 @@
     "description": "The real impact of image optimisation, gain speed with variable fonts, accessibility for everyone, implementing critical CSS and more.",
     "url": "https://mailchi.mp/perf.email/25",
     "date": "Mon June 17 2019 08:00:00 GMT+1000 (AEST)"
-  }
+  },
+   {
+    "title": "Issue #26",
+    "description": "How does Google PageSpeed work and affect SEO rankings, the cost of JavaScript in 2019, find a cost of adding an npm package and more.",
+    "url": "https://mailchi.mp/perf.email/26",
+    "date": "Mon July 3 2019 08:00:00 GMT+1000 (AEST)"
+  } 
 ]
