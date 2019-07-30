@@ -160,5 +160,10 @@
     "description": "reducing bundle size at Intercom by 65%, developing performance empathy, learning how browsers parse and render websites and more.",
     "url": "https://mailchi.mp/perf.email/27",
     "date": "Mon July 18 2019 08:00:00 GMT+1000 (AEST)"
-  } 
+  },
+    "title": "Issue #28",
+    "description": "Fast software is the best software, stale while revalidate, optimising GIFs, accessible React components and more.",
+    "url": "https://mailchi.mp/perf.email/28",
+    "date": "Tue July 30 2019 08:00:00 GMT+1000 (AEST)"
+  },  
 ]
