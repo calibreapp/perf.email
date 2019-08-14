@@ -149,7 +149,7 @@
     "url": "https://mailchi.mp/perf.email/25",
     "date": "Mon June 17 2019 08:00:00 GMT+1000 (AEST)"
   },
-   {
+  {
     "title": "Issue #26",
     "description": "How does Google PageSpeed work and affect SEO rankings, the cost of JavaScript in 2019, find a cost of adding an npm package and more.",
     "url": "https://mailchi.mp/perf.email/26",
@@ -157,10 +157,11 @@
   },
   {
     "title": "Issue #27",
-    "description": "reducing bundle size at Intercom by 65%, developing performance empathy, learning how browsers parse and render websites and more.",
+    "description": "Reducing bundle size at Intercom by 65%, developing performance empathy, learning how browsers parse and render websites and more.",
     "url": "https://mailchi.mp/perf.email/27",
     "date": "Mon July 18 2019 08:00:00 GMT+1000 (AEST)"
   },
+  {
     "title": "Issue #28",
     "description": "Fast software is the best software, stale while revalidate, optimising GIFs, accessible React components and more.",
     "url": "https://mailchi.mp/perf.email/28",
