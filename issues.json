@@ -166,5 +166,11 @@
     "description": "Fast software is the best software, stale while revalidate, optimising GIFs, accessible React components and more.",
     "url": "https://mailchi.mp/perf.email/28",
     "date": "Tue July 30 2019 08:00:00 GMT+1000 (AEST)"
+  },
+    {
+    "title": "Issue #29",
+    "description": "Largest Contentful Paint, why Time to First Byte matters, how annoying type delay is and more.",
+    "url": "https://mailchi.mp/perf.email/29",
+    "date": "Thu August 15 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
