@@ -167,10 +167,16 @@
     "url": "https://mailchi.mp/perf.email/28",
     "date": "Tue July 30 2019 08:00:00 GMT+1000 (AEST)"
   },
-    {
+  {
     "title": "Issue #29",
     "description": "Largest Contentful Paint, why Time to First Byte matters, how annoying type delay is and more.",
     "url": "https://mailchi.mp/perf.email/29",
     "date": "Thu August 15 2019 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #30",
+    "description": "Tackling third-party JavaScript, rendering on the Web, why performance and accessibility have to be the baseline and more.",
+    "url": "https://mailchi.mp/perf.email/30",
+    "date": "Thu August 26 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
