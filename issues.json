@@ -178,5 +178,11 @@
     "description": "Tackling third-party JavaScript, rendering on the Web, why performance and accessibility have to be the baseline and more.",
     "url": "https://mailchi.mp/perf.email/30",
     "date": "Thu August 26 2019 08:00:00 GMT+1000 (AEST)"
+  },
+   {
+    "title": "Issue #31",
+    "description": "How web content affects power usage, everything you need to know about resource hints, making Instagram faster and more.",
+    "url": "https://mailchi.mp/perf.email/31",
+    "date": "Mon September 9 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
