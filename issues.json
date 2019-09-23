@@ -184,5 +184,11 @@
     "description": "How web content affects power usage, everything you need to know about resource hints, making Instagram faster and more.",
     "url": "https://mailchi.mp/perf.email/31",
     "date": "Mon September 9 2019 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #32",
+    "description": "Investigating animation performance, debugging layout instability, responsive image optimisation CDNs and more.",
+    "url": "https://mailchi.mp/perf.email/32",
+    "date": "Mon September 23 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
