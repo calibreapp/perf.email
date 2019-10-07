@@ -190,5 +190,11 @@
     "description": "Investigating animation performance, debugging layout instability, responsive image optimisation CDNs and more.",
     "url": "https://mailchi.mp/perf.email/32",
     "date": "Mon September 23 2019 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #33",
+    "description": "Understand WebPageTest waterfall, know the context of performance metrics, learn about the state of video and more.",
+    "url": "https://mailchi.mp/perf.email/33",
+    "date": "Mon October 7 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
