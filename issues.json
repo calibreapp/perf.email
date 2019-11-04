@@ -202,5 +202,11 @@
     "description": "Justifying performance using analytics, how performance choices affect usability, testing speed of Single Page Apps, Third Party tracking and more.",
     "url": "https://mailchi.mp/perf.email/34",
     "date": "Tue October 22 2019 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #35",
+    "description": "Understand how performance affects user engagement, find out if JAMstack is really fast, learn the response limits for speed and more.",
+    "url": "https://mailchi.mp/perf.email/35",
+    "date": "Mon November 4 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
