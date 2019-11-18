@@ -208,5 +208,11 @@
     "description": "Understand how performance affects user engagement, find out if JAMstack is really fast, learn the response limits for speed and more.",
     "url": "https://mailchi.mp/perf.email/35",
     "date": "Mon November 4 2019 08:00:00 GMT+1000 (AEST)"
+  },
+   {
+    "title": "Issue #36",
+    "description": "Learn about critical performance announcements from Chrome Developer Summit, understand the state of performance in 2019, new metrics and more.",
+    "url": "https://mailchi.mp/perf.email/36",
+    "date": "Mon November 18 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
