@@ -214,5 +214,11 @@
     "description": "Learn about critical performance announcements from Chrome Developer Summit, understand the state of performance in 2019, new metrics and more.",
     "url": "https://mailchi.mp/perf.email/36",
     "date": "Mon November 18 2019 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #37",
+    "description": "Mitigate the performance impact of using live chat, learn how Discord made their iOS app fast, use remote data fetching for speedy interactions and more.",
+    "url": "https://mailchi.mp/perf.email/37",
+    "date": "Mon December 2 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
