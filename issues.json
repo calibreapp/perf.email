@@ -220,5 +220,11 @@
     "description": "Mitigate the performance impact of using live chat, learn how Discord made their iOS app fast, use remote data fetching for speedy interactions and more.",
     "url": "https://mailchi.mp/perf.email/37",
     "date": "Mon December 2 2019 08:00:00 GMT+1000 (AEST)"
+  },
+   {
+    "title": "Issue #38",
+    "description": "How to popularise performance, get started with modern web performance, implement fast ads, monitor JavaScript main thread task execution and more.",
+    "url": "https://mailchi.mp/perf.email/38",
+    "date": "Mon December 16 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
