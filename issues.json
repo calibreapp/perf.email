@@ -226,5 +226,11 @@
     "description": "How to popularise performance, get started with modern web performance, implement fast ads, monitor JavaScript main thread task execution and more.",
     "url": "https://mailchi.mp/perf.email/38",
     "date": "Mon December 16 2019 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #39",
+    "description": "Establish long-term performance strategy, designing for performant typography, ensure your CSS-in-JS isn't slow and more.",
+    "url": "https://mailchi.mp/perf.email/39",
+    "date": "Mon December 30 2019 08:00:00 GMT+1000 (AEST)"
   }
 ]
