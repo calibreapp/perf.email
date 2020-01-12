@@ -232,5 +232,11 @@
     "description": "Establish long-term performance strategy, designing for performant typography, ensure your CSS-in-JS isn't slow and more.",
     "url": "https://mailchi.mp/perf.email/39",
     "date": "Mon December 30 2019 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #40",
+    "description": "Speed up your sites with advanced Service Worker strategies, leverage Adaptive Loading, build fast animations in React, prioritise users over developers and more.",
+    "url": "https://mailchi.mp/perf.email/40",
+    "date": "Mon January 13 08:00:00 GMT+1000 (AEST)"
   }
 ]
