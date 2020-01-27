@@ -238,5 +238,11 @@
     "description": "Speed up your sites with advanced Service Worker strategies, leverage Adaptive Loading, build fast animations in React, prioritise users over developers and more.",
     "url": "https://mailchi.mp/perf.email/40",
     "date": "Mon January 13 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #41",
+    "description": "Learn about new generation of performance metrics, decide whether you should self-host Google Fonts, how eBay built a performance culture and more.",
+    "url": "https://mailchi.mp/perf.email/41",
+    "date": "Mon January 27 08:00:00 GMT+1000 (AEST)"
   }
 ]
