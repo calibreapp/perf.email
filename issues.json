@@ -244,5 +244,11 @@
     "description": "Learn about new generation of performance metrics, decide whether you should self-host Google Fonts, how eBay built a performance culture and more.",
     "url": "https://mailchi.mp/perf.email/41",
     "date": "Mon January 27 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #42",
+    "description": "Design for performant imagery, discover and debug Node.js speed issues, avoid using slow SSL certificates and more.",
+    "url": "https://mailchi.mp/perf.email/42",
+    "date": "Mon February 10 08:00:00 GMT+1000 (AEST)"
   }
 ]
