@@ -250,5 +250,11 @@
     "description": "Design for performant imagery, discover and debug Node.js speed issues, avoid using slow SSL certificates and more.",
     "url": "https://mailchi.mp/perf.email/42",
     "date": "Mon February 10 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #43",
+    "description": "Track performance in GitHub Pull Requests, reduce the size of your Angular bundle, slow down your internet and more.",
+    "url": "https://mailchi.mp/perf.email/43",
+    "date": "Mon February 24 08:00:00 GMT+1000 (AEST)"
   }
 ]
