@@ -256,5 +256,11 @@
     "description": "Track performance in GitHub Pull Requests, reduce the size of your Angular bundle, slow down your internet and more.",
     "url": "https://mailchi.mp/perf.email/43",
     "date": "Mon February 24 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #44",
+    "description": "Quantify the impact of performance on revenue, lint performance in the browser, use Lighthouse in Firefox and more.",
+    "url": "https://mailchi.mp/perf.email/44",
+    "date": "Mon March 9 08:00:00 GMT+1000 (AEST)"
   }
 ]
