@@ -262,5 +262,11 @@
     "description": "Quantify the impact of performance on revenue, lint performance in the browser, use Lighthouse in Firefox and more.",
     "url": "https://mailchi.mp/perf.email/44",
     "date": "Mon March 9 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #45",
+    "description": "Prepare for mobile-first indexing in Google, learn the speed impact of variable fonts, optimise your CSS Modules output and more.",
+    "url": "https://mailchi.mp/perf.email/45",
+    "date": "Mon March 23 08:00:00 GMT+1000 (AEST)"
   }
 ]
