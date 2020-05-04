@@ -274,5 +274,17 @@
     "description": "Learn how your Performance Score will change, understand performance metrics, consider environmental impact of code and more.",
     "url": "https://mailchi.mp/perf.email/46",
     "date": "Mon Apr 6 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #47",
+    "description": "See how the pandemic affects the internet, learn how to profile React.js performance, how Messenger shrunk by 84% and more.",
+    "url": "https://mailchi.mp/perf.email/47",
+    "date": "Mon Apr 20 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #48",
+    "description": "Reconsider tracking First Meaningful Paint, learn how to analyse and fix performance, use improved bundle chunking and more.",
+    "url": "https://mailchi.mp/perf.email/48",
+    "date": "Mon May 4 08:00:00 GMT+1000 (AEST)"
   }
 ]
