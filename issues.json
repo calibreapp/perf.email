@@ -286,5 +286,11 @@
     "description": "Reconsider tracking First Meaningful Paint, learn how to analyse and fix performance, use improved bundle chunking and more.",
     "url": "https://mailchi.mp/perf.email/48",
     "date": "Mon May 4 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #49",
+    "description": "Start monitoring Core Web Vitals, learn how to correlate speed to conversions, see the impact of JavaScript frameworks and more.",
+    "url": "https://mailchi.mp/perf.email/49",
+    "date": "Mon May 18 08:00:00 GMT+1000 (AEST)"
   }
 ]
