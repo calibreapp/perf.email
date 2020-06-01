@@ -292,5 +292,11 @@
     "description": "Start monitoring Core Web Vitals, learn how to correlate speed to conversions, see the impact of JavaScript frameworks and more.",
     "url": "https://mailchi.mp/perf.email/49",
     "date": "Mon May 18 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #50",
+    "description": "Know how Web Vitals will affect your ranking, make Google Fonts really fast, learn how to use CrUX Dashboard and more.",
+    "url": "https://mailchi.mp/perf.email/50",
+    "date": "Mon Jun 1 08:00:00 GMT+1000 (AEST)"
   }
 ]
