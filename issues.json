@@ -298,5 +298,11 @@
     "description": "Know how Web Vitals will affect your ranking, make Google Fonts really fast, learn how to use CrUX Dashboard and more.",
     "url": "https://mailchi.mp/perf.email/50",
     "date": "Mon Jun 1 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #51",
+    "description": "Avoid the most common performance tracking mistakes, learn about the digital divide, prevent JavaScript memory leaks and more.",
+    "url": "https://mailchi.mp/perf.email/51",
+    "date": "Mon Jun 15 08:00:00 GMT+1000 (AEST)"
   }
 ]
