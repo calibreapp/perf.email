@@ -310,5 +310,11 @@
     "description": "Discover the future of HTTP, learn why to track Core Web Vitals, use WebP in Safari, make your apps accessible and more.",
     "url": "https://mailchi.mp/perf.email/52",
     "date": "Mon Jun 29 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #53",
+    "description": "Understand why we need better metrics for a11y, compare how sites perform based on JS frameworks, see if prefetch is causing slowdowns and more.",
+    "url": "https://mailchi.mp/perf.email/53",
+    "date": "Mon Jul 13 08:00:00 GMT+1000 (AEST)"
   }
 ]
