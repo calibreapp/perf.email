@@ -316,5 +316,11 @@
     "description": "Understand why we need better metrics for a11y, compare how sites perform based on JS frameworks, see if prefetch is causing slowdowns and more.",
     "url": "https://mailchi.mp/perf.email/53",
     "date": "Mon Jul 13 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #54",
+    "description": "Is your host fast yet, add Core Web Vitals tracking to Google Analytics, use Periodic Background Sync to get fresh data and more.",
+    "url": "https://mailchi.mp/perf.email/54",
+    "date": "Mon Jul 27 08:00:00 GMT+1000 (AEST)"
   }
 ]
