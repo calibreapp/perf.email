@@ -322,5 +322,11 @@
     "description": "Is your host fast yet, add Core Web Vitals tracking to Google Analytics, use Periodic Background Sync to get fresh data and more.",
     "url": "https://mailchi.mp/perf.email/54",
     "date": "Mon Jul 27 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #55",
+    "description": "Learn how Performance Score is calculated, get to know speed-oriented CSS content visibility, use AVIF, see what contributes to CLS and more.",
+    "url": "https://mailchi.mp/perf.email/55",
+    "date": "Mon Aug 10 08:00:00 GMT+1000 (AEST)"
   }
 ]
