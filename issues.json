@@ -328,5 +328,11 @@
     "description": "Learn how Performance Score is calculated, get to know speed-oriented CSS content visibility, use AVIF, see what contributes to CLS and more.",
     "url": "https://mailchi.mp/perf.email/55",
     "date": "Mon Aug 10 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #56",
+    "description": "Understand that performance is distribution, see the benefits of Browser Back/Forward caches, automatically optimise images in your Pull Requests and more.",
+    "url": "https://mailchi.mp/perf.email/56",
+    "date": "Tue Aug 25 08:00:00 GMT+1000 (AEST)"
   }
 ]
