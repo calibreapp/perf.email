@@ -334,5 +334,11 @@
     "description": "Understand that performance is distribution, see the benefits of Browser Back/Forward caches, automatically optimise images in your Pull Requests and more.",
     "url": "https://mailchi.mp/perf.email/56",
     "date": "Tue Aug 25 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #57",
+    "description": "Know that JAMstack is only fast when you make it so, minimise DOM reflows, test 404 page performance, use a high-performing 11ty blog template and more.",
+    "url": "https://mailchi.mp/perf.email/57",
+    "date": "Tue Sep 9 08:00:00 GMT+1000 (AEST)"
   }
 ]
