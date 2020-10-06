@@ -346,5 +346,11 @@
     "description": "AVIF is here, understand resource prioties, know which metrics to track, speed up your JavaScript and more.",
     "url": "https://mailchi.mp/perf.email/58",
     "date": "Tue Sep 22 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #59",
+    "description": "Reduce Next.js bundle size, a real-time privacy inspector, learn about JPEG XL, know the real cost of poor website quality and more.",
+    "url": "https://mailchi.mp/perf.email/59",
+    "date": "Tue Oct 6 08:00:00 GMT+1000 (AEST)"
   }
 ]
