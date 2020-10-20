@@ -352,5 +352,11 @@
     "description": "Reduce Next.js bundle size, a real-time privacy inspector, learn about JPEG XL, know the real cost of poor website quality and more.",
     "url": "https://mailchi.mp/perf.email/59",
     "date": "Tue Oct 6 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #60",
+    "description": "Optimise your images directly in GitHub, reduce third party impact, improve Core Web Vitals, stop using CDNs for external JavaScript libraries and more.",
+    "url": "https://mailchi.mp/perf.email/60",
+    "date": "Tue Oct 20 08:00:00 GMT+1000 (AEST)"
   }
 ]
