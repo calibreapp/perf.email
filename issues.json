@@ -358,5 +358,11 @@
     "description": "Optimise your images directly in GitHub, reduce third party impact, improve Core Web Vitals, stop using CDNs for external JavaScript libraries and more.",
     "url": "https://mailchi.mp/perf.email/60",
     "date": "Tue Oct 20 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #61",
+    "description": "Get and stay fast, will Brotli replace Gzip?, enhance your skeleton screens with BlurHash, is CSS Houdini fast? and more.",
+    "url": "https://mailchi.mp/perf.email/61",
+    "date": "Wed Nov 4 08:00:00 GMT+1000 (AEST)"
   }
 ]
