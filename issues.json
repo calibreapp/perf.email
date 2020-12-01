@@ -370,5 +370,11 @@
     "description": "Prevent layout shifts with CSS grid stacks, case against anti-flicker snippets, site speed topography, faster Firefox 83 and more.",
     "url": "https://mailchi.mp/perf.email/62",
     "date": "Tue Nov 17 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #63",
+    "description": "Implement instant back/forward navigation, learn about images and their impact on LCP, how Wikipedia sped up page previews and more.",
+    "url": "https://mailchi.mp/perf.email/63",
+    "date": "Tue Dec 1 08:00:00 GMT+1000 (AEST)"
   }
 ]
