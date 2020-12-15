@@ -376,5 +376,11 @@
     "description": "Implement instant back/forward navigation, learn about images and their impact on LCP, how Wikipedia sped up page previews and more.",
     "url": "https://mailchi.mp/perf.email/63",
     "date": "Tue Dec 1 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #64",
+    "description": "The state of performance in 2020, lazy-load third party resources with facades, downsize images directly in Figma and more.",
+    "url": "https://mailchi.mp/perf.email/64",
+    "date": "Tue Dec 15 08:00:00 GMT+1000 (AEST)"
   }
 ]
