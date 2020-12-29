@@ -382,5 +382,11 @@
     "description": "The state of performance in 2020, lazy-load third party resources with facades, downsize images directly in Figma and more.",
     "url": "https://mailchi.mp/perf.email/64",
     "date": "Tue Dec 15 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #65",
+    "description": "Use modern JavaScript for performance, zero-bundle-size React Server Components, image optimisation strategies for 2021 and more.",
+    "url": "https://mailchi.mp/perf.email/65",
+    "date": "Tue Dec 29 08:00:00 GMT+1000 (AEST)"
   }
 ]
