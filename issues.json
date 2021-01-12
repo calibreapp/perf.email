@@ -388,5 +388,11 @@
     "description": "Use modern JavaScript for performance, zero-bundle-size React Server Components, image optimisation strategies for 2021 and more.",
     "url": "https://mailchi.mp/perf.email/65",
     "date": "Tue Dec 29 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #66",
+    "description": "Front-end Performance Checklist for 2021, set up your cache correctly, optimise for sustainability, adjust font display for networks and more.",
+    "url": "https://mailchi.mp/perf.email/66",
+    "date": "Tue Jan 12 08:00:00 GMT+1000 (AEST)"
   }
 ]
