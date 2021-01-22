@@ -394,5 +394,11 @@
     "description": "Front-end Performance Checklist for 2021, set up your cache correctly, optimise for sustainability, adjust font display for networks and more.",
     "url": "https://mailchi.mp/perf.email/66",
     "date": "Tue Jan 12 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #67",
+    "description": "Know how performance affects accessibility, prevent layout shifts caused by webfonts, how SmashingMag improved their speed and more.",
+    "url": "https://mailchi.mp/perf.email/67",
+    "date": "Tue Jan 26 08:00:00 GMT+1000 (AEST)"
   }
 ]
