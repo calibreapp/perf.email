@@ -406,5 +406,11 @@
     "description": "How speed really affects your SEO ranking, improve performance of CSS-in-JS, benchmarking 5G speeds and more.",
     "url": "https://mailchi.mp/perf.email/68",
     "date": "Tue Feb 9 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #69",
+    "description": "Is prefetching worth it, use Lighthouse Parade to crawl your site, test priority hints with WebPageTest and more.",
+    "url": "https://mailchi.mp/perf.email/69",
+    "date": "Tue Feb 23 08:00:00 GMT+1000 (AEST)"
   }
 ]
