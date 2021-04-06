@@ -424,5 +424,11 @@
     "description": "How to improve the speed of your CSS, understand the mobile inequality gap, see how Glossier prioritised which metrics to track and more.",
     "url": "https://mailchi.mp/perf.email/71",
     "date": "Tue Mar 23 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #72",
+    "description": "How to deliver impactful speed improvements as a team, bypass cookie banners when testing, use facades to reduce impact of live chat and more.",
+    "url": "https://mailchi.mp/perf.email/72",
+    "date": "Tue Apr 6 08:00:00 GMT+1000 (AEST)"
   }
 ]
