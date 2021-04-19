@@ -430,5 +430,11 @@
     "description": "How to deliver impactful speed improvements as a team, bypass cookie banners when testing, use facades to reduce impact of live chat and more.",
     "url": "https://mailchi.mp/perf.email/72",
     "date": "Tue Apr 6 08:00:00 GMT+1000 (AEST)"
+  },
+  {
+    "title": "Issue #73",
+    "description": "Cookie consent banner best practices, convince your boss to care about speed, how to write tree-shakeable libraries and more.",
+    "url": "https://mailchi.mp/perf.email/74",
+    "date": "Tue Apr 20 08:00:00 GMT+1000 (AEST)"
   }
 ]
