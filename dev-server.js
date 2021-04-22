@@ -1,19 +1,23 @@
-'use strict'
+"use strict";
 
-let webpack = require('webpack');
-let WebpackDevServer = require('webpack-dev-server');
-let config = require('./webpack.config');
+const path = require("path");
+const webpack = require("webpack");
+const WebpackDevServer = require("webpack-dev-server");
+const config = require("./webpack.config");
+
+console.log(config.output.publicPath, "publicPath");
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
+  contentBase: path.join(__dirname, "public"),
   hot: true,
   historyApiFallback: true,
   inline: true,
-  progress: true
-}).listen(3000, '0.0.0.0', function (err, result) {
+  progress: true,
+}).listen(3000, "0.0.0.0", function (err, result) {
   if (err) {
     console.log(err);
   }
 
-  console.log('Listening at 0.0.0.0:3000');
+  console.log("Listening at 0.0.0.0:3000");
 });
