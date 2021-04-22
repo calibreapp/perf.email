@@ -1,4 +1,0 @@
-[[headers]]
-  for = "/api/issues.json"
-  [headers.values]
-    Access-Control-Allow-Origin = "https://calibreapp.com"
