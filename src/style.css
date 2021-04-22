@@ -30,11 +30,6 @@ a:hover {
 * Typography
 ------------------------------------------------------------------*/
 
-@font-face {
-  font-family: "Calibre";
-  src: url("Calibre-Semibold.woff2") format("woff2");
-}
-
 h1 {
   font-size: 22px;
   line-height: 1.2;
