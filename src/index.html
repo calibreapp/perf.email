@@ -36,8 +36,8 @@
 
   <main role="main" class="container">
     <h2>Here’s what our readers think:</h2>
-    <section class="testimonials-container">
-      <div class="testimonial bg-green100">
+    <section class="testimonials-container flex">
+      <div class="testimonial bg-green100 box">
         <p>“Well curated and includes articles I would not have otherwise come across.”</p>
         <div class="testimonial-author">
           <img src="/testimonials/addy-osmani.png" alt="Addy Osmani" class="testimonial-author-photo" width="50" height="50">
@@ -47,7 +47,7 @@
         <!-- testimonial-author -->
       </div>
       <!--  testimonial -->
-      <div class="testimonial bg-yellow200">
+      <div class="testimonial bg-yellow200 box">
         <p>“I love️ the Performance Newsletter! 👏🏻 ”</p>
         <div class="testimonial-author">
           <img src="/testimonials/alice-orru.png" alt="Alice Orrù" class="testimonial-author-photo" width="50" height="50">
@@ -57,7 +57,7 @@
         <!-- testimonial-author -->
       </div>
       <!--  testimonial -->
-      <div class="testimonial bg-red100">
+      <div class="testimonial bg-red100 box">
         <p>“This newsletter is easily the best performance publication we have.”</p>
         <div class="testimonial-author">
           <img src="/testimonials/harry-roberts.png" alt="Harry Roberts" class="testimonial-author-photo" width="50" height="50">
@@ -67,7 +67,7 @@
         <!-- testimonial-author -->
       </div>
       <!--  testimonial -->
-      <div class="testimonial bg-blue100">
+      <div class="testimonial bg-blue100 box">
         <p>“Reliably one of the best value for no money newsletters in my inbox.”</p>
         <div class="testimonial-author">
           <img src="/testimonials/alex-russell.png" alt="Alex Russell" class="testimonial-author-photo" width="50" height="50">
@@ -77,7 +77,7 @@
         <!-- testimonial-author -->
       </div>
       <!--  testimonial -->
-      <div class="testimonial bg-grey100">
+      <div class="testimonial bg-grey100 box">
         <p>“A goldmine of resources to make your webperf adventures more fruitful.”</p>
         <div class="testimonial-author">
           <img src="/testimonials/cosima-mielke.png" alt="Cosima Mielke" class="testimonial-author-photo" width="50" height="50">
@@ -87,7 +87,7 @@
         <!-- testimonial-author -->
       </div>
       <!--  testimonial -->
-      <div class="testimonial bg-purple100">
+      <div class="testimonial bg-purple100 box">
         <p>“It looks beautiful—probably one of the nicest newsletters I&nbsp;know. 👌🏻 ”</p>
         <div class="testimonial-author">
           <img src="/testimonials/anton-sten.png" alt="Anton Sten" class="testimonial-author-photo" width="50" height="50">
@@ -111,12 +111,28 @@
       <!-- container -->
     </div>
     <div class="footer-disclaimer bg-blue500">
-      <div class="container">
-        <p>Performance Newsletter is brought to you by Calibre: an all-in-one speed monitoring platform. <a href="https://calibreapp.com/">Try it for free</a>.</p>
-        <p>Curated by <a href="https://twitter.com/fox">Karolina Szczur</a>.</p>
-  
-        <p>We email from the traditional lands of the Wurundjeri/Woiwurrung people of the Kulin nation. We acknowledge that sovereignty was never ceded and pay respects to the Elders past, present and emerging.</p>
+      <div class="container flex">
+        <div class="box">
+          <svg width="134" height="40">
+            <use xlink:href="#calibre-logo" link:href="#calibre-logo">
+          </svg>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <p>Performance Newsletter is brought to you by&nbsp;Calibre: an all-in-one speed monitoring platform. <a href="https://calibreapp.com/">Try it for free</a>.</p>
+          <p>Curated by <a href="https://twitter.com/fox">Karolina Szczur</a>.</p>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <p>We email from the traditional lands of the Wurundjeri/Woiwurrung people of the Kulin nation. We acknowledge that <a href="https://www.firstpeoplesvic.org/about/the-treaty-journey-so-far/">sovereignty was never ceded</a> and pay respects to the Elders past, present and emerging.</p>
+
+          <svg width="50" height="30">
+            <use xlink:href="#aboriginal-flag" link:href="#aboriginal-flag">
+          </svg>
+        </div>
+        <!-- box -->
       </div>
+      <!-- container flex -->
     </div>
   </footer>
 
