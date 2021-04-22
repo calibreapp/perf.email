@@ -5,8 +5,6 @@ const webpack = require("webpack");
 const WebpackDevServer = require("webpack-dev-server");
 const config = require("./webpack.config");
 
-console.log(config.output.publicPath, "publicPath");
-
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   contentBase: path.join(__dirname, "public"),
