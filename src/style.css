@@ -2,14 +2,45 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue500: #041452;
+  --blue300: #3057F4;
+  --blue100: #CFD8FC;
+  --grey500: #2B2B2B;
+  --grey400: #5E5E5E;
+  --grey200: #C4C4C4;
+  --grey100: #E5E5E5;
+  --green100: #D9F2E6;
+  --yellow200: #FFE599;
+  --red100: #F9D6D2;
+  --purple100: #D8D1FA;
+
+  --spacing-unit: 15px;
+  --space-1: var(--spacing-unit); /* 15px */
+  --space-2: calc(var(--spacing-unit) * 2); /* 30px */
+  --space-3: calc(var(--spacing-unit) * 4); /* 60px */
+  --space-4: calc(var(--spacing-unit) * 6); /* 90px */
+
+  --type-h1: 60px;
+  --type-h2: 36px;
+  --type-paragraph-l: 24px;
+  --type-paragraph-m: 20px;
+  --type-paragraph-s: 18px;
+
+  --type-regular: 400;
+  --type-semibold: 500;
+  --type-bold: 700;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsl(203, 5%, 32%);
-  font-size: 18px;
+  color: var(--grey500);
+  font-size: var(--type-paragraph-m);
+  font-weight: var(--type-regular);
   margin: 0;
 }
 
@@ -18,12 +49,14 @@ body {
 ------------------------------------------------------------------*/
 
 a {
-  text-decoration: none;
-  color: hsl(218, 50%, 50%);
+  font-weight: var(--type-semibold);
+  text-decoration: underline;
+  color: inherit;
+  transition: all 1s ease-in;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*-----------------------------------------------------------------
@@ -31,43 +64,67 @@ a:hover {
 ------------------------------------------------------------------*/
 
 h1 {
-  font-size: 22px;
-  line-height: 1.2;
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: var(--space-2);
 }
 
 @media screen and (min-width: 48em) {
   h1 {
-    font-size: 36px;
+    font-size: var(--type-h1);
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: var(--type-h2);
 }
 
 h1,
-h2,
-h3,
-h4 {
-  color: hsl(0, 0%, 20%);
-  margin-bottom: 30px;
-  font-family: "Calibre", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-  font-weight: 600;
-}
-
-h4 {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+h2 {
+  color: var(--blue500);
+  font-weight: var(--type-bold);
 }
 
 p {
-  line-height: 1.4;
+  line-height: 1.2;
+  margin: 0;
 }
 
-p:not(:last-of-type) {
-  margin-bottom: 30px;
+/*-----------------------------------------------------------------
+* Colors
+------------------------------------------------------------------*/
+
+.text-blue300 {
+  color: var(--blue300);
+}
+
+.text-grey400 {
+  color: var(--grey400);
+}
+
+.bg-green100 {
+  background-color: var(--green100);
+}
+
+.bg-blue100 {
+  background-color: var(--blue100);
+}
+
+.bg-red100 {
+  background-color: var(--red100);
+}
+
+.bg-purple100 {
+  background-color: var(--purple100);
+}
+
+.bg-grey100 {
+  background-color: var(--grey100);
+}
+
+.bg-yellow200 {
+  background-color: var(--yellow200);
 }
 
 /*-----------------------------------------------------------------
@@ -112,11 +169,6 @@ p:not(:last-of-type) {
 * Header
 ------------------------------------------------------------------*/
 
-header {
-  padding: 60px 0;
-  background-color: hsl(218, 100%, 98%);
-}
-
 .perfemail-logo {
   width: 200px;
   display: flex;
@@ -136,54 +188,17 @@ header {
 ------------------------------------------------------------------*/
 
 .container {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 64em) {
   .container {
-    width: 60%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
-/*-----------------------------------------------------------------
-* Issue list
-------------------------------------------------------------------*/
-
-main {
-  padding: 30px 0;
-}
-
-main h1 {
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  padding: 30px 0;
-}
-
-li:first-child {
-  padding-top: 0;
-}
-
-li:not(:last-child) {
-  border-bottom: 1px solid hsl(0, 0%, 88%);
-}
-
-li p {
-  margin: 0;
-}
-
-li h2 {
-  margin: 0 0 10px 0;
-}
 
 /*-----------------------------------------------------------------
 * Footer
@@ -215,4 +230,45 @@ footer h4 {
   opacity: 0.7;
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
+}
+
+/*-----------------------------------------------------------------
+* Testimonials
+------------------------------------------------------------------*/
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 48em) {
+  .testimonials-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.testimonial {
+  border-radius: 6px;
+  padding: var(--space-2);
+  margin-bottom: var(--space-2);
+  flex-basis: 380px;
+}
+
+.testimonial p:first-child {
+  font-size: var(--type-paragraph-l);
+  font-weight: var(--type-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.testimonial-author {
+  overflow: auto;
+}
+
+.testimonial-author-photo {
+  float: left;
+  border-radius: 3px;
+  margin-right: var(--space-1);
 }
