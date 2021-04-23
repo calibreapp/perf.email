@@ -33,6 +33,7 @@
 
   --type-line-height-default: 1.2;
   --type-line-height-tight: 1;
+  --type-line-height-spacious: 1.4;
 }
 
 body {
@@ -45,6 +46,12 @@ body {
   font-size: var(--type-paragraph-m);
   font-weight: var(--type-regular);
   margin: 0;
+}
+
+::-moz-selection,
+::selection { 
+  background: var(--blue100); 
+  color: var(--blue500);
 }
 
 /*-----------------------------------------------------------------
@@ -218,6 +225,10 @@ header p:last-of-type {
 * Footer
 ------------------------------------------------------------------*/
 
+footer p {
+  line-height: var(--type-line-height-spacious);
+}
+
 footer p:first-child {
   margin-bottom: var(--space-2);
 }
@@ -285,18 +296,30 @@ footer p:first-child {
   margin-bottom: var(--space-2);
 }
 
+.testimonial-author {
+  align-self: flex-end;
+  flex-basis: 100%;
+}
+
+.testimonial-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+}
+
 .testimonial p:first-child {
   font-size: var(--type-paragraph-l);
   font-weight: var(--type-semibold);
   margin-bottom: var(--space-2);
 }
 
-.testimonial-author {
-  overflow: auto;
+.testimonial p:last-child {
+  line-height: 1.8;
 }
 
 .testimonial-author-photo {
   float: left;
-  border-radius: 3px;
+  border-radius: 6px;
   margin-right: var(--space-1);
 }
