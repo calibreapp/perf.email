@@ -31,7 +31,7 @@
   --type-semibold: 500;
   --type-bold: 700;
 
-  --type-line-height-default: 1.25;
+  --type-line-height-default: 1.2;
   --type-line-height-tight: 1;
 }
 
@@ -156,6 +156,7 @@ p {
   margin-bottom: var(--space-1);
   display: inline-block;
   text-decoration: none;
+  text-align: center;
   width: 100%;
 }
 
@@ -167,7 +168,7 @@ p {
 
 @media screen and (min-width: 48em) {
   .button {
-    width: auto;
+    width: 360px;
   }
 }
 
