@@ -22,7 +22,7 @@
 
 <body>
   <header role="banner">
-    <div class="container">
+    <div class="container flex">
       <div class="content">
         <h1>Your best source of <span class="text-blue300">web&nbsp;performance news</span>. Every two weeks.</h1>
         <p>Receive fresh articles, tools and case studies that will make you a better web performance advocate. See <a href="https://mailchi.mp/perf.email/74">how&nbsp;it&nbsp;looks</a> and <a href="https://us2.campaign-archive.com/home/?u=9067434ef642e9c92aa7453d2&id=7cba5dc7bd">browse the archives</a>.</p>
@@ -41,8 +41,8 @@
   <main role="main" class="container">
     <h2>Here’s what our readers think:</h2>
     <section class="testimonials-container flex">
-      <div class="testimonial-inner">
-        <div class="testimonial bg-green100 box">
+      <div class="testimonial bg-green100 box">
+          <div class="testimonial-inner">
           <p>“Well curated and includes articles I would not have otherwise come across.”</p>
           <div class="testimonial-author">
             <img src="/testimonials/addy-osmani.png" alt="Addy Osmani" class="testimonial-author-photo" width="50" height="50">
@@ -126,9 +126,12 @@
   <footer role="contentinfo">
     <div class="footer-links bg-blue100">
       <div class="container">
-        <a href="https://twitter.com/perfemail">Get news on Twitter</a>
-        <a href="/rss">Receive issues via RSS</a>
-        <a href="mailto:hi@perf.email">Suggest new content</a>
+        <div class="flex">
+          <a class="box" href="https://twitter.com/perfemail">Get news on Twitter</a>
+          <a class="box" href="/rss">Receive issues via RSS</a>
+          <a class="box" href="mailto:hi@perf.email">Suggest new content</a>
+        </div>
+        <!-- flex -->
       </div>
       <!-- container -->
     </div>

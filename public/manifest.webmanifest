@@ -1,4 +1,10 @@
 {
+  "name": "Performance Newsletter",
+  "short_name": "Perf.Email",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#3057F4",
+  "description": "A fortnightly newsletter on web performance, accessibility and user experience.",
   "icons": [
     {
       "src": "/favicons/192.png",
