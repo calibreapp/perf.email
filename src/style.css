@@ -193,6 +193,10 @@ a:hover {
     color: var(--blue300);
   }
 
+  footer {
+    background: var(--blue500);
+  }
+
   .button {
     color: white;
     background-color: var(--blue300);
@@ -241,7 +245,7 @@ a:hover {
   }
 
   .testimonial:nth-of-type(5) {
-    background: var(--grey200);
+    background: var(--grey100);
   }
 
   .testimonial:nth-of-type(6) {
@@ -486,7 +490,8 @@ footer p:first-child {
   padding: var(--space-2);
 }
 
-.testimonial * {
+.testimonial p,
+.testimonial-author {
   flex-basis: 100%;
 }
 
