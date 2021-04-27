@@ -171,10 +171,14 @@ a:hover {
 * Header
 ------------------------------------------------------------------*/
 
-header .content {
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content {
   padding: var(--space-2) var(--space-1) var(--space-5) var(--space-1);
-  max-width: 545px;
-  text-align: center;
 }
 
 header p:first-of-type {
@@ -185,14 +189,13 @@ header p:last-of-type {
   font-size: var(--type-paragraph-s);
 }
 
-.promo-image-wrapper {
+.header-image-wrapper {
   position: relative;
   padding: var(--space-3) 0 0 var(--space-3);
   overflow: hidden;
-  max-width: 500px;
 }
 
-.promo-image-wrapper::after {
+.header-image-wrapper::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -203,9 +206,61 @@ header p:last-of-type {
   background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
 }
 
-.promo-image {
+.header-promo-image {
   border-radius: 30px 0 0 0; 
 }
+
+@media screen and (max-width: 64em) {
+  header .container {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  header .header-content {
+    order: 2;
+    text-align: center;
+  }
+
+  header p:first-of-type {
+    font-size: var(--type-paragraph-m);
+  }
+
+  .header-image-wrapper {
+    width: 100%;
+    height: 400px;
+    order: 1;
+    padding: var(--space-3) 0 0 var(--space-2);
+    text-align: center;
+  }  
+}
+
+@media screen and (min-width: 65em) {
+  header .container {
+    flex-wrap: nowrap;
+  }
+
+  .header-content {
+    text-align: left;
+    max-width: 560px;
+  }
+
+  .header-image-wrapper {
+    max-width: 500px;
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  header {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(207,216,252,1) 70%, rgba(207,216,252,1) 100%);
+  }
+
+  .header-image-wrapper {
+    max-width: 100%;
+    margin-right: -400px;
+  }
+}
+
 
 /*-----------------------------------------------------------------
 * Container
@@ -335,25 +390,6 @@ footer p:first-child {
   .container {
     padding: 0 var(--space-1);
   }
-
-  header .container {
-    padding: 0;
-  }
-
-  header .content {
-    order: 2;
-  }
-
-  header p:first-of-type {
-    font-size: var(--type-paragraph-m);
-  }
-
-  .promo-image-wrapper {
-    max-width: 100%;
-    height: 400px;
-    order: 1;
-    padding: var(--space-3) 0 0 var(--space-2);
-  }  
 }
 
 @media screen and (min-width: 48em) {
@@ -387,9 +423,5 @@ footer p:first-child {
   
   .footer-links .box {
     margin: 0;
-  }
-
-  header .content {
-    text-align: left;
   }
 }
