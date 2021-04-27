@@ -109,7 +109,7 @@ a {
   font-weight: var(--type-semibold);
   text-decoration: underline;
   color: inherit;
-  transition: all 1s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 a:hover {
