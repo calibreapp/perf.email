@@ -454,10 +454,6 @@ footer p:first-child {
   margin-bottom: var(--space-2);
 }
 
-.box:last-of-type {
-  margin: 0;
-}
-
 @media screen and (min-width: 65em) {
   .flex {
     flex-direction: row;
