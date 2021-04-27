@@ -86,6 +86,22 @@ p {
   margin: 0;
 }
 
+@media screen and (min-width: 48em) {
+  h1 {
+    font-size: var(--type-h1);
+  }
+
+  h2 {
+    font-size: var(--type-h2);
+  }
+}
+
+@media screen and (max-width: 64em) {
+  h1, h2 {
+    text-align: center;
+  }
+}
+
 /*-----------------------------------------------------------------
 * Links
 ------------------------------------------------------------------*/
@@ -165,6 +181,20 @@ a:hover {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   background-color: var(--blue500);
+}
+
+@media screen and (min-width: 48em) {
+  .button {
+    width: 360px;
+  }
+}
+
+/*-----------------------------------------------------------------
+* Flag
+------------------------------------------------------------------*/
+
+#aboriginal-flag {
+  border-radius: var(--radius-default);
 }
 
 /*-----------------------------------------------------------------
@@ -252,6 +282,7 @@ header p:last-of-type {
 
 @media screen and (min-width: 75em) {
   header {
+    overflow: hidden;
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(207,216,252,1) 70%, rgba(207,216,252,1) 100%);
   }
 
@@ -270,6 +301,12 @@ header p:last-of-type {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--space-2);
+}
+
+@media screen and (max-width: 64em) {
+  .container {
+    padding: 0 var(--space-1);
+  }
 }
 
 /*-----------------------------------------------------------------
@@ -299,6 +336,18 @@ footer p:first-child {
   color: var(--blue100);
 }
 
+@media screen and (min-width: 65em) {
+  .footer-links .box {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  footer {
+    text-align: center;
+  }
+}
+
 /*-----------------------------------------------------------------
 * Flexbox
 ------------------------------------------------------------------*/
@@ -307,7 +356,6 @@ footer p:first-child {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
 }
 
 .box {
@@ -318,6 +366,25 @@ footer p:first-child {
 
 .box:last-of-type {
   margin: 0;
+}
+
+@media screen and (min-width: 65em) {
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 360px;
+  }
+
+  .box:first-child,
+  .box:nth-child(2),
+  .box:nth-child(4),
+  .box:nth-child(5) {
+    margin-right: var(--space-2);
+  }
 }
 
 /*-----------------------------------------------------------------
@@ -333,9 +400,16 @@ footer p:first-child {
   padding: var(--space-2);
 }
 
+.testimonial * {
+  flex-basis: 100%;
+}
+
 .testimonial-author {
   align-self: flex-end;
-  flex-basis: 100%;
+}
+
+.testimonial-author p:last-child {
+  font-size: var(--type-paragraph-s);
 }
 
 .testimonial-inner {
@@ -361,11 +435,7 @@ footer p:first-child {
   margin-right: var(--space-1);
 }
 
-/*-----------------------------------------------------------------
-* Responsive
-------------------------------------------------------------------*/
-
-@media screen and (max-width: 26em) {
+@media screen and (max-width: 64em) {
   .testimonial {
     text-align: center;
   }
@@ -379,49 +449,5 @@ footer p:first-child {
     display: inline-block;
     float: none;
     margin-bottom: var(--space-1);
-  }
-}
-
-@media screen and (max-width: 64em) {
-  h1, h2, footer {
-    text-align: center;
-  }
-
-  .container {
-    padding: 0 var(--space-1);
-  }
-}
-
-@media screen and (min-width: 48em) {
-  h1 {
-    font-size: var(--type-h1);
-  }
-
-  h2 {
-    font-size: var(--type-h2);
-  }
-
-  .flex {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .box {
-    width: 50%;
-    flex-basis: auto;
-  }
-
-  .button {
-    width: 360px;
-  }
-}
-
-@media screen and (min-width: 65em) {
-  .box {
-    width: 380px;
-  }
-  
-  .footer-links .box {
-    margin: 0;
   }
 }
