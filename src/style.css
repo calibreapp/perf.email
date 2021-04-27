@@ -8,8 +8,10 @@
   --grey100: #E5E5E5;
   --green100: #D9F2E6;
   --yellow200: #FFE599;
+  --yellow400: #E5AA00;
   --red100: #F9D6D2;
   --purple100: #D8D1FA;
+  --purple400: #2E12BA;
 
   --spacing-unit: 15px;
   --space-1: var(--spacing-unit); /* 15px */
@@ -44,10 +46,8 @@
 body {
   font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--grey500);
   font-size: var(--type-paragraph-m);
   font-weight: var(--type-regular);
   margin: 0;
@@ -76,7 +76,6 @@ h2 {
 
 h1,
 h2 {
-  color: var(--blue500);
   font-weight: var(--type-bold);
   text-align: left;
 }
@@ -117,45 +116,137 @@ a:hover {
   text-decoration: none;
 }
 
-
 /*-----------------------------------------------------------------
-* Colors
+* Dark Mode
 ------------------------------------------------------------------*/
 
-.text-blue300 {
-  color: var(--blue300);
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background: var(--blue500);
+    color: var(--blue100);
+  }
+
+  .button {
+    color: var(--blue500);
+    background-color: var(--yellow400);
+  }
+
+  .button:hover {
+    background-color: var(--yellow200);
+  }
+
+  .footer-links {
+    background: var(--blue500);
+  }
+
+  h1, h2 {
+    color: white;
+  }
+
+  strong {
+    color: var(--yellow400);
+  }
+
+  header p:last-child {
+    color: var(--blue100);
+  }
+
+  .header-image-wrapper {
+    background: var(--purple400);
+  }
+
+  .header-image-wrapper::after {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(4,20,82,1) 100%);
+  }
+
+  @media screen and (min-width: 75em) {
+    header {
+      background: var(--blue500);
+    }
+  }
+
+  .testimonial,
+  .footer-links {
+    background: var(--purple400);
+  }
+  
+  .testimonial-author-photo {
+    filter: grayscale(30%);
+  }
 }
 
-.text-grey400 {
-  color: var(--grey400);
-}
+/*-----------------------------------------------------------------
+* Light Mode
+------------------------------------------------------------------*/
 
-.bg-green100 {
-  background-color: var(--green100);
-}
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: var(--grey500);
+  }
 
-.bg-blue100 {
-  background-color: var(--blue100);
-}
+  h1, h2 {
+    color: var(--blue500);
+  }
 
-.bg-blue500 {
-  background-color: var(--blue500);
-}
+  strong {
+    color: var(--blue300);
+  }
 
-.bg-red100 {
-  background-color: var(--red100);
-}
+  .button {
+    color: white;
+    background-color: var(--blue300);
+  }
 
-.bg-purple100 {
-  background-color: var(--purple100);
-}
+  .button:hover {
+    background-color: var(--blue500);
+  }
 
-.bg-grey100 {
-  background-color: var(--grey100);
-}
+  header p:last-of-type {
+    color: var(--grey400);
+  }
 
-.bg-yellow200 {
-  background-color: var(--yellow200);
+  .header-image-wrapper {
+    background: var(--blue100);
+  }
+
+  .header-image-wrapper::after {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+  }
+
+  @media screen and (min-width: 75em) {
+    header {
+      background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(207,216,252,1) 70%, rgba(207,216,252,1) 100%);
+    }
+  }
+
+  .footer-links {
+    background: var(--blue100);
+  }
+
+  .testimonial:first-child {
+    background: var(--green100);
+  }
+
+  .testimonial:nth-of-type(2) {
+    background: var(--yellow200);
+  }
+
+  .testimonial:nth-of-type(3) {
+    background: var(--red100);
+  }
+
+  .testimonial:nth-of-type(4) {
+    background: var(--blue100);
+  }
+
+  .testimonial:nth-of-type(5) {
+    background: var(--grey200);
+  }
+
+  .testimonial:nth-of-type(6) {
+    background: var(--purple100);
+  }
 }
 
 /*-----------------------------------------------------------------
@@ -166,8 +257,6 @@ a:hover {
   border-radius: var(--radius-default);
   padding: var(--space-1) var(--space-2);
   border: none;
-  color: white;
-  background-color: var(--blue300);
   font-weight: var(--type-semibold);
   margin-top: var(--space-3);
   margin-bottom: var(--space-1);
@@ -180,7 +269,6 @@ a:hover {
 .button:hover {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-  background-color: var(--blue500);
 }
 
 @media screen and (min-width: 48em) {
@@ -233,7 +321,6 @@ header p:last-of-type {
   right: 0;
   width: 100%;
   height: 200px;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
 }
 
 .header-promo-image {
@@ -283,7 +370,6 @@ header p:last-of-type {
 @media screen and (min-width: 75em) {
   header {
     overflow: hidden;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(207,216,252,1) 70%, rgba(207,216,252,1) 100%);
   }
 
   .header-image-wrapper {
