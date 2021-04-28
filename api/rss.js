@@ -47,7 +47,5 @@ module.exports = async (_req, res) => {
 
   res.setHeader("Content-Type", "application/rss+xml");
   res.setHeader("Cache-Control", "s-maxage=86400");
-  res.send({
-    body: rss,
-  });
+  res.send(rss);
 };
