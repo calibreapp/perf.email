@@ -43,10 +43,6 @@ module.exports = {
         loader: ExtractTextPlugin.extract("style", "css?minimize", "postcss")
       },
       {
-        test: /\.woff2$/,
-        loader: "file"
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: ["react-hot", "babel-loader"]
