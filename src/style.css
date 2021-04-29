@@ -156,7 +156,7 @@ a:hover {
   }
 
   .header-image-wrapper::after {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(4,20,82,1) 100%);
+    background: linear-gradient(180deg, rgba(4,20,82,0) 50%, rgba(4,20,82,1) 100%);
   }
 
   @media screen and (min-width: 75em) {
