@@ -1,0 +1,4 @@
+# Code owners are automatically requested for review when someone opens a pull request that modifies code that they own. This helps speed up the review process and ensures we adhere the standards we set up for ourselves.
+
+# @thefoxis owns the perf.email website:
+* @thefoxis
