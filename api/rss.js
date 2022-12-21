@@ -41,7 +41,7 @@ const generateRSS = (issues) => {
   return feed.xml({ indent: true });
 };
 
-module.exports = async (_req, res) => {
+export default async (_req, res) => {
   const issues = await getIssues();
   const rss = generateRSS(issues);
 
