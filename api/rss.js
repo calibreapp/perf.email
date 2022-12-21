@@ -1,10 +1,10 @@
-const RSS = require("rss");
-const Mailchimp = require("mailchimp-api-v3");
+import RSS from "rss";
+import Mailchimp from "mailchimp-api-v3";
 
 const client = new Mailchimp(process.env.MAILCHIMP_API_KEY);
 
 const getIssues = async () => {
-  const response = await client.get("/campaigns", {
+  const response = client.get("/campaigns", {
     type: "regular",
     status: "sent",
     sort_field: "send_time",
