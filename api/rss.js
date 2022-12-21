@@ -1,5 +1,5 @@
-const RSS = require("rss");
-const Mailchimp = require("mailchimp-api-v3");
+import RSS from "rss";
+import Mailchimp from "mailchimp-api-v3";
 
 const client = new Mailchimp(process.env.MAILCHIMP_API_KEY);
 
@@ -41,11 +41,11 @@ const generateRSS = (issues) => {
   return feed.xml({ indent: true });
 };
 
-module.exports = async (_req, res) => {
+export default async function rss(_req, res) {
   const issues = await getIssues();
   const rss = generateRSS(issues);
 
   res.setHeader("Content-Type", "application/rss+xml");
   res.setHeader("Cache-Control", "s-maxage=86400");
   res.send(rss);
-};
+}
