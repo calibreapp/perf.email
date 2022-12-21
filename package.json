@@ -1,7 +1,7 @@
 {
-  "name": "perf-mail-vite",
+  "name": "email.perf",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "mailchimp-api-v3": "^1.15.0",
+    "normalize.css": "^8.0.1",
     "rss": "^1.2.2"
   }
 }
