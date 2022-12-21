@@ -4,7 +4,7 @@ import Mailchimp from "mailchimp-api-v3";
 const client = new Mailchimp(process.env.MAILCHIMP_API_KEY);
 
 const getIssues = async () => {
-  const response = client.get("/campaigns", {
+  const response = await client.get("/campaigns", {
     type: "regular",
     status: "sent",
     sort_field: "send_time",
@@ -41,11 +41,11 @@ const generateRSS = (issues) => {
   return feed.xml({ indent: true });
 };
 
-export default async (_req, res) => {
+export default async function rss(_req, res) {
   const issues = await getIssues();
   const rss = generateRSS(issues);
 
   res.setHeader("Content-Type", "application/rss+xml");
   res.setHeader("Cache-Control", "s-maxage=86400");
   res.send(rss);
-};
+}
