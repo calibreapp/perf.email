@@ -10,7 +10,7 @@ Made by the team at [♠ Calibre](https://calibreapp.com/), your performance com
 
 ## Running the project
 
-`npm run dev` launches a local Vite dev server, accessible via [http://127.0.0.1:5173/](http://127.0.0.1:5173/). 
+`npm run dev` launches a local [Vite](https://vitejs.dev/) dev server, accessible via [http://127.0.0.1:5173/](http://127.0.0.1:5173/). 
 
 Vite’s dev server watches for source file changes, performing a live reload if any are detected.
 
