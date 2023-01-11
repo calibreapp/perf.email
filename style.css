@@ -465,6 +465,10 @@ footer p:first-child {
     width: 360px;
   }
 
+  .box.narrow {
+    width: 190px;
+  }
+
   .box:first-child,
   .box:nth-child(2),
   .box:nth-child(4),
