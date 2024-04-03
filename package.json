@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.1.4",
+    "vite": "^5.1.7",
     "vite-plugin-static-copy": "^0.17.1"
   },
   "dependencies": {
