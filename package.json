@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "vite": "^5.4.8",
-    "vite-plugin-static-copy": "^1.0.6"
+    "vite-plugin-static-copy": "^2.0.0"
   },
   "dependencies": {
     "mailchimp-api-v3": "^1.15.0",
