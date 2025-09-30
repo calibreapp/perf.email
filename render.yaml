@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: perf-email
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: MAILCHIMP_API_KEY
+        sync: false

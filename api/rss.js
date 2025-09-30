@@ -45,7 +45,7 @@ export default async function rss(_req, res) {
   const issues = await getIssues();
   const rss = generateRSS(issues);
 
-  res.setHeader("Content-Type", "application/rss+xml");
-  res.setHeader("Cache-Control", "s-maxage=86400");
+  res.set("Content-Type", "application/rss+xml");
+  res.set("Cache-Control", "s-maxage=86400");
   res.send(rss);
 }
