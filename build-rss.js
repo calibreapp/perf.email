@@ -1,5 +1,6 @@
 import RSS from "rss";
 import Mailchimp from "mailchimp-api-v3";
+import { writeFileSync } from "fs";
 
 const client = new Mailchimp(process.env.MAILCHIMP_API_KEY);
 
@@ -10,7 +11,7 @@ const getIssues = async () => {
     sort_field: "send_time",
     sort_dir: "desc",
     count: 100,
-    list_id: "7cba5dc7bd", // Delivered to the perf email list
+    list_id: "7cba5dc7bd",
   });
 
   return response.campaigns
@@ -41,11 +42,11 @@ const generateRSS = (issues) => {
   return feed.xml({ indent: true });
 };
 
-export default async function rss(_req, res) {
+const main = async () => {
   const issues = await getIssues();
   const rss = generateRSS(issues);
+  writeFileSync("dist/rss", rss);
+  console.log("RSS feed generated at dist/rss");
+};
 
-  res.set("Content-Type", "application/rss+xml");
-  res.set("Cache-Control", "s-maxage=86400");
-  res.send(rss);
-}
+main();

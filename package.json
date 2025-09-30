@@ -5,16 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "node server.js"
+    "build": "vite build && node build-rss.js",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^5.4.20",
     "vite-plugin-static-copy": "^2.3.0"
   },
   "dependencies": {
-    "express": "^4.18.2",
     "mailchimp-api-v3": "^1.15.0",
     "normalize.css": "^8.0.1",
     "rss": "^1.2.2"

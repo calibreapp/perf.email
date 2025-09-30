@@ -1,9 +1,8 @@
 services:
-  - type: web
+  - type: static_site
     name: perf-email
-    env: node
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    staticPublishPath: ./dist
     envVars:
       - key: MAILCHIMP_API_KEY
         sync: false
