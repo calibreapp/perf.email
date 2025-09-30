@@ -4,13 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && node build-rss.js",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^5.4.20",
-    "vite-plugin-static-copy": "^2.3.0"
+    "build": "node build.js && node build-rss.js"
   },
   "dependencies": {
     "mailchimp-api-v3": "^1.15.0",
