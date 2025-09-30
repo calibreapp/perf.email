@@ -6,3 +6,7 @@ services:
     envVars:
       - key: MAILCHIMP_API_KEY
         sync: false
+    headers:
+      - path: /rss
+        name: Content-Type
+        value: application/rss+xml; charset=utf-8

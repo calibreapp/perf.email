@@ -45,7 +45,7 @@ const generateRSS = (issues) => {
 const main = async () => {
   const issues = await getIssues();
   const rss = generateRSS(issues);
-  writeFileSync("dist/rss", rss);
+  writeFileSync("dist/rss", rss, "utf8");
   console.log("RSS feed generated at dist/rss");
 };
 
