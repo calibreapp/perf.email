@@ -1,5 +1,5 @@
 services:
-  - type: static_site
+  - type: web
     name: perf-email
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
