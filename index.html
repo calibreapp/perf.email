@@ -102,18 +102,29 @@
         <div class="header-image-wrapper">
           <picture>
             <source
+              srcset="perf-email-preview-dark.avif"
+              media="(prefers-color-scheme: dark)"
+              type="image/avif"
+            />
+            <source
               srcset="perf-email-preview-dark.webp"
               media="(prefers-color-scheme: dark)"
+              type="image/webp"
+            />
+            <source
+              srcset="perf-email-preview-light.avif"
+              type="image/avif"
             />
             <source
               srcset="perf-email-preview-light.webp"
-              media="(prefers-color-scheme: light)"
+              type="image/webp"
             />
             <img
               src="perf-email-preview-light.webp"
               class="header-promo-image"
               width="720"
               height="835"
+              fetchpriority="high"
               alt="A preview of Performance Newsletter showcasing the editor's note"
             />
           </picture>
