@@ -3,10 +3,7 @@ services:
     name: perf-email
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
-    envVars:
-      - key: MAILCHIMP_API_KEY
-        sync: false
-    headers:
-      - path: /rss
-        name: Content-Type
-        value: application/rss+xml; charset=utf-8
+    routes:
+      - type: redirect
+        source: /rss
+        destination: https://buttondown.com/perfemail/rss

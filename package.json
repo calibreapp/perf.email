@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "node build.js && node build-rss.js"
+    "dev": "node dev.js",
+    "build": "node build.js",
+    "preview": "npx --yes serve dist -l 4173"
   },
   "dependencies": {
-    "mailchimp-api-v3": "^1.15.0",
-    "normalize.css": "^8.0.1",
-    "rss": "^1.2.2"
+    "normalize.css": "^8.0.1"
   }
 }
