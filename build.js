@@ -1,5 +1,6 @@
-import { cpSync, mkdirSync, readFileSync, writeFileSync } from "fs";
+import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "fs";
 
+rmSync("dist", { recursive: true, force: true });
 mkdirSync("dist", { recursive: true });
 
 const stylesheets = {
