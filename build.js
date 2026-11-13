@@ -1,10 +1,22 @@
-import { cpSync, mkdirSync } from "fs";
+import { cpSync, mkdirSync, readFileSync, writeFileSync } from "fs";
 
 mkdirSync("dist", { recursive: true });
 
-cpSync("index.html", "dist/index.html");
-cpSync("style.css", "dist/style.css");
-cpSync("node_modules/normalize.css/normalize.css", "dist/normalize.css");
+const stylesheets = {
+  "/normalize.css": "node_modules/normalize.css/normalize.css",
+  "/style.css": "style.css",
+};
+
+let html = readFileSync("index.html", "utf8");
+
+for (const [href, path] of Object.entries(stylesheets)) {
+  const link = `<link rel="stylesheet" href="${href}" />`;
+  if (!html.includes(link)) throw new Error(`Missing ${link} in index.html`);
+  const css = readFileSync(path, "utf8").replace(/\/\*[\s\S]*?\*\//g, "").trim();
+  html = html.replace(link, () => `<style>${css}</style>`);
+}
+
+writeFileSync("dist/index.html", html);
 cpSync("public", "dist", { recursive: true });
 
-console.log("Static files copied to dist/");
+console.log("Built dist/ with inlined CSS");
