@@ -10,18 +10,16 @@ Made by the team at [♠ Calibre](https://calibreapp.com/), your performance com
 
 ## Running the project
 
-`npm run dev` launches a local [Vite](https://vitejs.dev/) dev server, accessible via [http://127.0.0.1:5173/](http://127.0.0.1:5173/). 
+`npm run dev` starts a small, dependency-free local server (`dev.js`), accessible via [http://127.0.0.1:5173/](http://127.0.0.1:5173/). Set `PORT` to use a different port.
 
-Vite’s dev server watches for source file changes, performing a live reload if any are detected.
+It serves `index.html` and `style.css` from the project root, assets from `/public` and `normalize.css` from `node_modules`, and reloads the browser whenever any of those files change.
 
 ## Build and preview
 
-The `npm run build` command generates production build files, output to the `/dest` directory. 
+The `npm run build` command copies the static files into `/dist` (`build.js`).
 
-To preview the build files locally, run the `npm run preview` command.
+To preview the build files locally, run the `npm run preview` command (serves `/dist` on [http://localhost:4173/](http://localhost:4173/)).
 
 ## RSS feed
 
-`api/rss.js` leverages [Vercel’s serverless function](https://vercel.com/docs/concepts/functions/serverless-functions) capability to perform an on-demand request of [perf.email](https://perf.email/) issues from Mailchimp, returned as an RSS XML file. 
-
-The `MAILCHIMP_API_KEY` environment variable is required for the Mailchimp API call.
+The RSS feed is provided by [Buttondown](https://buttondown.com/perfemail/rss). `/rss` redirects there (see `render.yaml`), so existing feed subscriptions keep working.
