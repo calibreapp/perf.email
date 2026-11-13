@@ -1,0 +1,33 @@
+name: Calibre deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Record deploy and run snapshot in Calibre
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Create deploy
+        env:
+          CALIBRE_API_TOKEN: ${{ secrets.CALIBRE_API_TOKEN }}
+        run: >
+          npx --yes calibre deploy create
+          --site=perf-email
+          --revision="${{ github.sha }}"
+          --repository="${{ github.server_url }}/${{ github.repository }}"
+          --username="${{ github.actor }}"
+
+      - name: Create snapshot
+        env:
+          CALIBRE_API_TOKEN: ${{ secrets.CALIBRE_API_TOKEN }}
+        run: >
+          npx --yes calibre site create-snapshot
+          --site=perf-email
+          --ref="${{ github.sha }}"
