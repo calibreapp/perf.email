@@ -63,6 +63,7 @@
     <script
       defer
       type="module"
+      fetchpriority="low"
       crossorigin="anonymous"
       integrity="ed25519-gnaOSQmkRGOilpk5Roz2cCACq7aFSmU9No0Sa6GkIaw="
       data-calibre-rum-id="aa599e74-25d1-4d9c-bcc9-008034fbf60e"
@@ -101,6 +102,20 @@
         <!-- header-content -->
         <div class="header-image-wrapper">
           <picture>
+            <source
+              srcset="perf-email-preview-dark-mobile.avif"
+              media="(max-width: 64em) and (prefers-color-scheme: dark)"
+              type="image/avif"
+              width="720"
+              height="360"
+            />
+            <source
+              srcset="perf-email-preview-light-mobile.avif"
+              media="(max-width: 64em)"
+              type="image/avif"
+              width="720"
+              height="360"
+            />
             <source
               srcset="perf-email-preview-dark.avif"
               media="(prefers-color-scheme: dark)"
@@ -145,7 +160,8 @@
             </p>
             <div class="testimonial-author">
               <img
-                src="/testimonials/addy-osmani.png"
+                src="/testimonials/addy-osmani.webp"
+                loading="lazy"
                 alt="Addy Osmani"
                 class="testimonial-author-photo"
                 width="50"
@@ -164,7 +180,8 @@
             <p>“I love️ the Performance Newsletter! 👏🏻 ”</p>
             <div class="testimonial-author">
               <img
-                src="/testimonials/alice-orru.png"
+                src="/testimonials/alice-orru.webp"
+                loading="lazy"
                 alt="Alice Orrù"
                 class="testimonial-author-photo"
                 width="50"
@@ -186,7 +203,8 @@
             </p>
             <div class="testimonial-author">
               <img
-                src="/testimonials/harry-roberts.png"
+                src="/testimonials/harry-roberts.webp"
+                loading="lazy"
                 alt="Harry Roberts"
                 class="testimonial-author-photo"
                 width="50"
@@ -208,7 +226,8 @@
             </p>
             <div class="testimonial-author">
               <img
-                src="/testimonials/alex-russell.png"
+                src="/testimonials/alex-russell.webp"
+                loading="lazy"
                 alt="Alex Russell"
                 class="testimonial-author-photo"
                 width="50"
@@ -230,7 +249,8 @@
             </p>
             <div class="testimonial-author">
               <img
-                src="/testimonials/cosima-mielke.png"
+                src="/testimonials/cosima-mielke.webp"
+                loading="lazy"
                 alt="Cosima Mielke"
                 class="testimonial-author-photo"
                 width="50"
@@ -254,7 +274,8 @@
             </p>
             <div class="testimonial-author">
               <img
-                src="/testimonials/anton-sten.png"
+                src="/testimonials/anton-sten.webp"
+                loading="lazy"
                 alt="Anton Sten"
                 class="testimonial-author-photo"
                 width="50"
@@ -290,6 +311,7 @@
             <a href="https://calibreapp.com/">
               <img
                 src="calibre-logo.svg"
+                loading="lazy"
                 width="134"
                 height="40"
                 alt="Calibre logo"
