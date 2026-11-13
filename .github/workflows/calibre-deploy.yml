@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - main
+  deployment_status:
 
 jobs:
   deploy:
-    name: Record deploy and run snapshot in Calibre
+    name: Record deploy in Calibre
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v4
@@ -24,10 +26,22 @@ jobs:
           --repository="${{ github.server_url }}/${{ github.repository }}"
           --username="${{ github.actor }}"
 
+  snapshot:
+    name: Run snapshot in Calibre
+    if: >
+      github.event_name == 'deployment_status' &&
+      github.event.deployment_status.state == 'success' &&
+      !contains(github.event.deployment.environment, ' PR #')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
       - name: Create snapshot
         env:
           CALIBRE_API_TOKEN: ${{ secrets.CALIBRE_API_TOKEN }}
         run: >
           npx --yes calibre site create-snapshot
           --site=perf-email
-          --ref="${{ github.sha }}"
+          --ref="${{ github.event.deployment.sha }}"
